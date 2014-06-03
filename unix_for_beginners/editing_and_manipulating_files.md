@@ -1,1 +1,1 @@
-# Editing, viewing and concatanating text files
+# Editing, viewing and concatenating text files

@@ -2,7 +2,7 @@
 
 * [Unix for beginners ](unix_for_beginners/README.md)
    * [File management and directories](unix_for_beginners/file_management_and_directories.md)
-   * [Editing, viewing and concatanating text files](unix_for_beginners/editing_and_manipulating_files.md)
+   * [Editing, viewing and concatenating text files](unix_for_beginners/editing_and_manipulating_files.md)
    * [Compressing and decompressing files](unix_for_beginners/compressing_and_decompressing_files.md)
    * [Connecting to a remote server with SSH](unix_for_beginners/connecting_to_a_remote_server.md)
    * [Downloading files with wget, curl and ftp](downloading_files_with_wget,_curl_and_ftp/README.md)
