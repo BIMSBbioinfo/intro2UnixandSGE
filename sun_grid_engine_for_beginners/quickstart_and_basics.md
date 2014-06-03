@@ -4,7 +4,7 @@
 ##Quickstart##
 Login to the head node: `ssh username@login1`, you can not do any computation here (see [cluster abuse]). The point of the head node is to distribute and schedule your jobs based on the resources demanded by you. Here is how you can start a job:
 
-```powershell
+```ruby
 username@login1:~$ qsub -V -b n -cwd runJob.sh
 Your job 1 ("runJob.sh") has been submitted
 ```
