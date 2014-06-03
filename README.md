@@ -5,7 +5,7 @@
 
 
 
-# Introduction to Unix and SGE cluster environment for beginners
+# Introduction to Unix and SGE for beginners
 
 
 
