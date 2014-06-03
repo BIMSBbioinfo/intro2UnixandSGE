@@ -30,3 +30,9 @@ Now, we can also ask for more CPU using **-pe** option. This option stands for "
 
 ```powershell
 username@login1:~$ qsub -pe smp 4 -l h_vmem=4G myJob.sh
+
+```
+
+
+
+
