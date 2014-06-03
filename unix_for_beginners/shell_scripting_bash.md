@@ -1,6 +1,6 @@
 # Shell scripting (bash)
 
-## What is shell script?
+## What is a shell script?
 
 ## what is Bash ?
 

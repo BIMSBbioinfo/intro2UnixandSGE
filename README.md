@@ -13,7 +13,7 @@ This is a guide on using unix systems and Sun Grid Engine(SGE) cluster environme
 
 First chapter will introduce basic usage for unix systems. The second chapter will explore SGE environment and show how to use the queuing system from users perspective.
 
-##  What will you get out of this
+##  What will you get out of this ?
 
 After reading, you will:
 
