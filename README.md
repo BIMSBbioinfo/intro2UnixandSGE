@@ -1,6 +1,11 @@
-# Introduction to Unix and SGE cluster environment for beginners
-
 ![asd](http://bioinformatics.mdc-berlin.de/img/GroupLogo.png)
+
+
+
+
+
+
+# Introduction to Unix and SGE cluster environment for beginners
 
 
 
@@ -21,6 +26,12 @@ After reading, you will:
 ## Contribute to the development
 
 You can contribute to the development of this guide using github features such as pull-requests and issue creation.
+
+### how to update the book
+edit the .md files using markdown syntax and run **"update_book.sh"**. This will create the html from the .md files, re-create **gh-pages** repository (gh-pages serves the html pages) and push those changes to **"gh-pages"** branch of the online repository. You should also commit the changes you made in the **"master"** branch. Basically, **"master"** branch has the markdown files, **"gh-pages"** branch has the html website.
+
+You may need to pull the repository, make changes and then create pull-request if you want your changes to be merged with the main repository. This may depend on your privileges [to be edited with more accurate information].
+
 
 ## Acknowledgements
 Initially created by Altuna Akalin. Later on X,Y,Z contributed to development and maintanence.
