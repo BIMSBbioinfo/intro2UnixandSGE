@@ -14,6 +14,9 @@ Your job 1 ("runJob.sh") has been submitted
 - The last argument to qsub is the command to be executed  or script to be run.
 The qsub command, if successful, will print the job number to stdout. See [How to submit a job using qsub] section for more.
 
+### what is runJob.sh
+`runJob.sh` is a shell script that has the specific commands to run our program. It basically looks like a bash script on section 1.7 but it can have some additional variables that can be used to configure the resources that the job demands. Command line options explained above (**-V**,**-cwd** etc.) can also be declared in runJob.sh via special syntax. More on qsub in later sections.
+
 ##Specifying resources:###
 The main resources you will be asking for are CPU(slots) and memory.
 
