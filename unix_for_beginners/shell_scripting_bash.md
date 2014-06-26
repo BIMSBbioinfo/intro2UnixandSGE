@@ -79,7 +79,40 @@ The arguments are stored in variables with a number in the order of the argument
 * Second Argument: $2
 * and so on...
 
-In the our case `$1` corresponds to `/home/user/project`.
+In the our case, `$1` corresponds to `/home/user/project`.
+
+
+### Arithmetic operations bash scripts
+Arithmetic operations on integers in bash are done in the following format:
+```
+#!/bin/bash
+x=6
+y=2
+$((10 - 5))
+$((x-y))
+
+echo $((x-y))
+echo $((10-5))
+```
+You can also copy paste these commands to the console to see how they work. The `echo` commands should output `4` and `5`.
+
+Bash arithmetic does not support floating points (e.g. 1.3 -1  operation will not work in bash), you need to use `bc` command. See [this stackOverflow example](http://stackoverflow.com/questions/12147040/division-in-script-and-floating-point) for an example on how to use  `bc`.
+
+### Looping over files
+If you are trying to automate a task using bash scripting, it is very likely you will have to apply certain commands on each file in a directory. This could be achieved with wild character`*` and `for` loops. The following script stores all the '.txt' files in `/path/to` directory in `FILES` variable. Then, for each file it calculates number of lines and outputs that with `wc -l` command.
+
+```
+#!/bin/bash
+FILES=/path/to/*.txt
+for f in $FILES
+do
+  echo "Processing $f file..."
+  # count number of lines and output that for file $f
+  wc -l $f
+done
+
+```
+
 
 ## More on bash scripts
 You can write even more complicated shell scripts using control structures (if/else, for/while loops) and achieve a lot just using the shell scripting, but that is beyond the scope of the document. See the links below if you want to get better at writing shell scripts.

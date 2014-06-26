@@ -52,7 +52,15 @@ btindex=/data/bioinfo/genome_data/Caenorhabditis_elegans/UCSC/ce10/Sequence/Bowt
 gzip -dc $infile | bowtie  --chunkmbs 300 --best -m 1 -p 6 --phred33 -q $btindex   -  -S $outfile
 
 ```
-And, you can run this as follows (assuming this file is saved as 'runBowtie.sh'). Since the options we care about are in the script, we do not need to pass them with the qsub command. The execution of bowtie starts with the `gzip -dc ...`. Since fastq files are compressed we first need to decompress them and feed the output to bowtie via `|` pipe.
+
+
+* Since the options we care about are in the script, we do not need to pass them with the qsub command. The lines starting with `#$` are the qsub options described above. They customize the job and ask for resources such as CPU and memory.
+* The input/output files for the bowtie command are stored in `infile`,`outfile` and `btindex` variables. Then, passed to the bowtie command. This is not really necessary but it is easier to read later on what is going on.
+
+* The execution of bowtie starts with the `gzip -dc ...`. Since fastq files are compressed we first need to decompress them and feed the output to bowtie via `|` pipe.
+* `--chunkmbs 300 --best -m 1 -p 6 --phred33 -q` are bowtie specific options. Look them up in the [Bowtie manual](http://bowtie-bio.sourceforge.net/).
+
+And, you can run this as follows (assuming this file is saved as 'runBowtie.sh').
 ```
 $ qsub runBowtie.sh
 ```

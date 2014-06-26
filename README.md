@@ -5,7 +5,7 @@
 
 
 
-# Introduction to Unix and SGE for beginners
+## Introduction to Unix and SGE for beginners
 
 
 
@@ -13,7 +13,7 @@ This is a guide on using unix systems and Sun Grid Engine(SGE) cluster environme
 
 First chapter will introduce basic usage for unix systems. The second chapter will explore SGE environment and show how to use the queuing system from users perspective.
 
-##  What will you get out of this ?
+###  What will you get out of this ?
 
 After reading, you will:
 
@@ -23,7 +23,7 @@ After reading, you will:
 * understand SGE and queueing system
 * be able to submit jobs to SGE cluster and troubleshoot
 
-## Contribute to the development
+### Contribute to the development
 
 You can contribute to the development of this guide using github features such as pull-requests and issue creation.
 
@@ -33,6 +33,6 @@ edit the .md files using markdown syntax and run **update_book.sh** as in `bash 
 You may need to pull the repository, make changes and then create pull-request if you want your changes to be merged with the main repository. This may depend on your privileges [to be edited with more accurate information].
 
 
-## Acknowledgements
+### Acknowledgements
 Initially created by Altuna Akalin. Some of the material is based on Martin Siegert's documentation of SGE cluster.
 

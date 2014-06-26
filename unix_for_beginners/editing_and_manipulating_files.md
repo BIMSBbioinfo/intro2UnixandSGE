@@ -2,7 +2,7 @@
 In many cases, you would want to see what is in a text file or edit a file, or create one from scratch. There are multiple ways to view the files.
 
 
-## cat : print the content of a file
+### cat : print the content of a file
 `cat` will print the whole content of the text file to your shell, if you don't redirect the output to another file. Here is how it works:
 ```
 $ cat log.txt
@@ -12,7 +12,7 @@ Ad 443
 $
 ```
 
-## head or tail: Print beginning or end of a file
+### head or tail: Print beginning or end of a file
 If you would like to display only the beginning of a file or the end, you can use `head` or `tail`. `head` shows the beginning and `tail` the end. Here we look at beginning and the end of `example.fastq` file, which contains reads from a next-generation sequencing experiment.
 
 ```
@@ -42,11 +42,11 @@ NGGTTGGTGGGCTGATGTCTATAAGTACTAGGGTAGCTCCTCCGATTAGAT
 NGTATTTCATGTGGTATAAGCATCTGGATAATCAGAGTAACGACGAGGTAT
 ```
 
-## more and less: Read files page by page
+### more and less: Read files page by page
 In some cases, you may want to look at a large file page by page. If you use `cat`, the whole file will be printed at once. It is inconvenient to use that if you want to inspect a large file. Instead you can use `more` or `less`, to view the files page by page.
 
 
-## creating text files with echo
+### creating text files with echo
 `echo` command prints the argument on the shell. See the following example.
 
 ```
@@ -66,7 +66,7 @@ hello world
 $
 ```
 
-# Editing and creating files using emacs
+## Editing and creating files using emacs
 Emacs is a text editor that you can invoke using `emacs` shell command. It is a powerfull text editor used by programmers and system adminstrators to create and manipulate text file, as well as, writing programs. Detailed introductions to emacs is beyond the scope of this document, but you can follow the link at the end of this section to learn more about emacs.
 
 You can open a text document using `emacs filename` command. Once emacs is started, you can type the content of the text file using your keyboard and save the file using `C-x C-s`, which means you have to type Ctrl+x then Ctrl+s, and your file will be saved. You can quit an emacs session using `C-x C-c`.

@@ -2,7 +2,7 @@
 
 
 
-## Directories
+### Directories
 File and directory paths in UNIX use the forward slash "/"
 to separate directory names in a path. If you are using a server your shell will start from /home/yourUserName/ directory. Also have a look at the conventional directory layout [here](http://en.wikipedia.org/wiki/Unix_filesystem#Conventional_directory_layout).
 
@@ -14,7 +14,7 @@ Here are a few examples of the directory strcucture:
 | `/usr`  | directory usr (sub-directory of / "root" directory)|
 | `/usr/local` | local is a subdirectory of /usr |
 
-### Creating a directory
+#### Creating a directory
 
 **mkdir** command creates a new directory. The command below creates a new directory named "newDir" under the current directory.
 ```
@@ -32,7 +32,7 @@ The next command creates a the target directory and all the non-existing directo
 $ mkdir -p ~/opt/samtools
 ```
 
-## Moving around the file system with cd
+### Moving around the file system with cd
 ***cd*** command stands for "change directory" lets you move around the file system. Here are a few examples of the ***cd*** command and ***pwd***.
 
 Type variants of these to your shell to move around your file system.
@@ -48,7 +48,7 @@ Type variants of these to your shell to move around your file system.
 
 
 
-## Listing directory contents
+### Listing directory contents
 ***ls*** command lists the contets of a directory. It can take multiple options, some of those are explained below.
 
 | commands | explanation |
@@ -62,7 +62,7 @@ Type variants of these to your shell to move around your file system.
 
 
 
-## Moving, renaming and copying files
+### Moving, renaming and copying files
 ***cp*** command **copies** the files and ***mv*** command **moves** the files. They are generally used with two main arguments. `cp target_file destination_file` or `mv target_file destination_file`.
 
 | commands | explanation |
@@ -72,7 +72,7 @@ Type variants of these to your shell to move around your file system.
 |`mv file1 newname` |        move or rename a file|
 |`mv file1 ~/opt/` |         move file1 into sub-directory opt in your home directory.|
 
-## Finding files
+### Finding files
 There are a couple of ways you can find files in your file system. We will show the **find** command, it works in the following syntax `find directory -name targetfile`. It is useful when you have a rough idea about file location.
 
 The following finds all files ending in ".html" under /home/user directory.
@@ -95,7 +95,7 @@ will find all filenames in the filesystem that contain ".txt" anywhere in their 
 
 A disadvantage of locate is that it stores all filenames on the system in an index that is usually updated only once a day. This means locate will not find files that have been created very recently.
 
-## Searching the contents of a text file
+### Searching the contents of a text file
 Often times you would need search a file for existence of certain characters or words. Imagine that you need to find gene ids in a text file containing some scores and gene ids, you would like to get the line(s) that contains your gene id of interest. This is similar to "find" functions in modern text processors such as MS Word. This can be achieved via **grep commmand**. Syntax of the command is: `grep options pattern files`
 
 | Command | Explanation |
@@ -104,7 +104,7 @@ Often times you would need search a file for existence of certain characters or 
 | `grep id1 *.txt` | searches and prints lines matching "id1" in files ending with ".txt" |
 |`grep -vi id1 *.txt`   |  similar to above, but -i option ignores the case (Id1,ID1,iD1 and id1 treated equally), -v option prints lines that don't match the pattern   |
 
-### using grep and find together
+#### using grep and find together
 You can search all files in an entire directory tree for a particular pattern by combining **grep** and **find**. The following command prints lines containing "genes" string, from the files 'find . -name "*.txt" -print' found.
 
     $ grep genes `find . -name "*.txt" -print`
@@ -112,7 +112,7 @@ You can search all files in an entire directory tree for a particular pattern by
 The search patterns that grep uses are a special
 named **regular expressions**. You can have more comlicated searches using regular expressions, but that is more of an advanced application. See [] for more on that.
 
-## See disk usage and free disk space with du and df
+### See disk usage and free disk space with du and df
 
-## Deleting files and directories
+### Deleting files and directories
 Use these with caution.

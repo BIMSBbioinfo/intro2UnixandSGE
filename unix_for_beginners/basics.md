@@ -14,13 +14,13 @@ drwxr-xr-x  22 root    staff   748 May 26 19:08 npm-34252-LVM-q+Ri
 
 ```
 
-# How can I start the shell ?
+## How can I start the shell ?
 
 * In Mac OS X, go to utilities and start "terminal"
 * In Windows, you need to install [Cygwin](http://en.wikipedia.org/wiki/Cygwin) or [PuTTY](http://en.wikipedia.org/wiki/PuTTY). Cygwin is a unix-like environment for windows. PuTTY is a terminal emulator capable of remote connection to unix/linux servers. Many windows users use PuTTY to connect to remote servers, such as login node of clusters.
 * If you are using linux, you should already know how to start the shell.
 
 
-# Getting help on unix commands
+### Getting help on unix commands
 * type "man commandName", such as `man ls`, this will return the manual page on the given command. Most unix commands have extensive explanations and examples on those pages. Type 'q' on your keyboard to quit the manual view.
 * google the command with "+ unix", this will usually return forums and webpages about the command. Look for example usage and explanations.
