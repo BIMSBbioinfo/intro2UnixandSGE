@@ -12,8 +12,7 @@ done
 
 echo "commit message:  $message "
 
-git commit --all -m "$message"
-git push
+
 
 gitbook build -o ../intro2UnixandSGE_book
 cd ../intro2UnixandSGE_book
