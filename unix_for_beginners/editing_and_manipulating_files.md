@@ -67,14 +67,11 @@ $
 ```
 
 ## Editing and creating files using emacs
-Emacs is a text editor that you can invoke using `emacs` shell command. It is a powerfull text editor used by programmers and system adminstrators to create and manipulate text file, as well as, writing programs. Detailed introductions to emacs is beyond the scope of this document, but you can follow the link at the end of this section to learn more about emacs.
+Emacs is a text editor that you can invoke using `emacs` shell command. It is a powerfull text editor used by programmers and system adminstrators to create and manipulate text file, as well as, writing programs. Detailed introductions to emacs is beyond the scope of this document, but you can [follow this link](http://www.gnu.org/software/emacs/tour/) to learn more about emacs.
 
 You can open a text document using `emacs filename` command. Once emacs is started, you can type the content of the text file using your keyboard and save the file using `C-x C-s`, which means you have to type Ctrl+x then Ctrl+s, and your file will be saved. You can quit an emacs session using `C-x C-c`.
 
-* [more on emacs](http://www.gnu.org/software/emacs/tour/)
 
 # Editing and creating text files using vi
-vi is a text editor similar to emacs. People [often argue](http://en.wikipedia.org/wiki/Editor_war) which one is the best. Long story short, emacs is the best. But if you want to learn more about vi, follow the link below.
-
-* [more on vi](http://www.howtogeek.com/102468/a-beginners-guide-to-editing-text-files-with-vi/)
+vi is a text editor similar to emacs. People [often argue](http://en.wikipedia.org/wiki/Editor_war) which one is the best. Long story short, emacs is the best. But if you want to learn more about vi, [follow this link](http://www.howtogeek.com/102468/a-beginners-guide-to-editing-text-files-with-vi/).
 
