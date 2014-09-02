@@ -9,9 +9,11 @@ Apart from being the base of many operating systems, a multitude of scientific s
 ### What will you learn?
 
 In this section, you will be learning:
-* File management and directories (commands: ls, cd, cp, mv, rm)
-* Editing, viewing and concatanating text files (commands: more, less, head, tail, cat, cut etc.)
-* Compressing and decompressing files (commands: gzip and zcat)
+* File management and directories (commands: `ls`, `cd`, `cp`, `mv`,
+  `rm`)
+* Editing, viewing and concatenating text files (commands: `more`,
+  `less`, `head`, `tail`, `cat`, `cut` etc.)
+* Compressing and decompressing files (commands: `gzip` and `zcat`)
 * Connecting to a remote server with ssh
-* Downloading files with wget, curl and ftp
+* Downloading files with `wget`, `curl` and `ftp`
 * Simple shell scripts with bash
