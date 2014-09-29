@@ -19,7 +19,6 @@ R version 3.0.2 (2013-09-25) -- "Frisbee Sailing"
 Copyright (C) 2013 The R Foundation for Statistical Computing
 Platform: x86_64-pc-linux-gnu (64-bit)
 
-...
 ```
 A "particular" node can request by:
 ```powershell
