@@ -24,5 +24,7 @@ Platform: x86_64-pc-linux-gnu (64-bit)
 If a particular node can request by:
 ```powershell
 username@login1:~ $ qrsh -l h='node050' -now no ....
+...
+username@node050:~$ 
 ```
 
