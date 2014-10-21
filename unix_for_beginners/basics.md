@@ -1,5 +1,14 @@
 # Basics
-You will interact with the unix sytem via special program called *shell*. This is a command processor, which interprets and runs the commands. More practically, you type commands to the shell which are send to the operating system. Output of the commands as well as warnings and errors usually be directed back to the shell. However, not every command will write back their output to the shell.  The shell is basically a command line interface. Here is what a shell environment looks like:
+
+You will interact with the unix system via a special program called
+*shell*. This is a command processor, which interprets and runs the
+commands. More practically, you type commands to the shell which are
+send to the operating system. Output of the commands as well as
+warnings and errors are usually directed back to the shell. However,
+not every command will write back their output to the shell.  The
+shell is basically a command line interface. Here is what a shell
+environment looks like:
+
 ![alt](http://upload.wikimedia.org/wikipedia/en/8/8c/TcshAndShScreenCapture.png)
 
 Commands are composed of two parts: the name of the command itself and arguments. Arguments alter the behavior of the commands or denote the targets of the commands. The below example shows ***ls*** command (which lists the files in a given directory) with different arguments. If arguments have "-" in front it means they are options which change the behaviour of the command. Below ***ls*** command is run with and without a **-l** option.
