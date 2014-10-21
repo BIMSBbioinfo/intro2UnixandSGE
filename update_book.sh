@@ -1,24 +1,13 @@
 #!/bin/bash
-message=
 
-while getopts m: opt; do
-  case $opt in
-  m)
-      message=$OPTARG
-      ;;
-  esac
-done
+TARGET=../intro2UnixandSGE_book
+REPO=git@github.com:BIMSBbioinfo/intro2UnixandSGE
 
+gitbook build -o "$TARGET"
 
-echo "commit message:  $message "
-
-
-
-gitbook build -o ../intro2UnixandSGE_book
-cd ../intro2UnixandSGE_book
+cd "$TARGET"
 git init
-git commit --allow-empty -m "$message"
+git commit --allow-empty "$@"
 git checkout -b gh-pages
-git add .
-git commit -am  "$message"
-git push git@github.com:BIMSBbioinfo/intro2UnixandSGE  gh-pages --force
+git commit -a "$@"
+git push $REPO  gh-pages --force
