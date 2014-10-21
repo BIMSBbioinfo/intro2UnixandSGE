@@ -1,35 +1,109 @@
-# Basics
+# The Shell
 
-You will interact with the unix system via a special program called
-*shell*. This is a command processor, which interprets and runs the
-commands. More practically, you type commands to the shell which are
-send to the operating system. Output of the commands as well as
-warnings and errors are usually directed back to the shell. However,
-not every command will write back their output to the shell.  The
-shell is basically a command line interface. Here is what a shell
-environment looks like:
+The traditional and arguably most effective way to interact with a
+Unix-like system is through a special programme called "shell".  A
+shell can be used interactively as a command line interface or as a
+batch processor.
+
+In the following screenshot you can see what a shell environment looks
+like on MacOS.  You see four terminal windows in a graphical user
+interface, running different shells (a descendent of the original
+shell `sh`, and `tcsh`).
 
 ![alt](http://upload.wikimedia.org/wikipedia/en/8/8c/TcshAndShScreenCapture.png)
 
-Commands are composed of two parts: the name of the command itself and arguments. Arguments alter the behavior of the commands or denote the targets of the commands. The below example shows ***ls*** command (which lists the files in a given directory) with different arguments. If arguments have "-" in front it means they are options which change the behaviour of the command. Below ***ls*** command is run with and without a **-l** option.
+In this tutorial we assume that the popular GNU shell `bash` is used
+instead.
 
-```
-user:tmp user$ ls
-npm-34252-LVM-q+Ri
 
-user:tmp user$ ls -l
+## What is GNU?
+
+According to the [GNU website](http://gnu.org),
+
+> GNU is a Unix-like operating system that is free softwareit respects
+> your freedom. You can install versions of GNU (more precisely,
+> GNU/Linux systems) which are entirely free software.
+
+> The GNU Project was launched in 1984 to develop the GNU system. The
+> name “GNU” is a recursive acronym for “GNU's Not Unix!”.
+
+Although GNU is by its own admission "not Unix", the GNU system is one
+of the most popular modern implementations of a Unix-like system.
+Many of the GNU applications (including the `bash` shell) are
+available for other operating systems as well.
+
+
+## Starting a shell session
+
+We highly recommended that a Unix-like system be used for this course.
+If this is not an option for you and you are tied to Microsoft
+Windows, you should install
+[Cygwin](http://en.wikipedia.org/wiki/Cygwin), a Unix-like environment
+for Windows.  If you have remote access to a system running a
+Unix-like operating system such as GNU/Linux, it may be sufficient to
+install [PuTTY](http://en.wikipedia.org/wiki/PuTTY), a terminal
+application for accessing remote systems over the SSH protocol.  Many
+Windows users use PuTTY to connect to remote servers, such as the
+login node of a cluster.
+
+Let's start a shell session!
+
+* In Mac OS X, go to "utilities" and start "terminal"
+* In Windows open the Cygwin terminal or use PuTTY to connect to a
+  remote Unix host
+* If you are using GNU/Linux, start your preferred terminal
+  application (e.g. xterm, urxvt, konsole, terminal, etc.)
+
+
+## What are commands?
+
+The shell interprets text as commands.  In interactive mode the user
+inputs text commands on the command line prompt and submits them for
+processing; the shell reads from the "standard input" stream
+(connected to the keyboard).  In batch processing mode, on the other
+hand, the shell reads commands from a specified file, called a
+"script".  By default, the shell is configured to print all potential
+output of the commands to the screen.
+
+Any command line consists of one or more words; the first word is the
+*name* of the command itself, whereas anything that follows belongs to
+the *arguments* to the command.
+
+Arguments are passed to the command.  They can be *switches* or
+*options* (indicated by the `-` prefix) to modify the behaviour of the
+command, patterns, the names of files to operate on, etc.  The meaning
+of the arguments depends on the command.
+
+The below example shows the `ls` command (which lists the files in a
+given directory) without any arguments and run with the `-l` option.
+(The `$` stands for the shell prompt and is not part of the command.)
+
+~~~
+$ ls
+Documents
+
+$ ls -l
 total 0
-drwxr-xr-x  22 root    staff   748 May 26 19:08 npm-34252-LVM-q+Ri
+drwxr-xr-x  22 root    staff   748 May 26 19:08 Documents
+~~~
 
-```
-
-## How can I start the shell ?
-
-* In Mac OS X, go to utilities and start "terminal"
-* In Windows, you need to install [Cygwin](http://en.wikipedia.org/wiki/Cygwin) or [PuTTY](http://en.wikipedia.org/wiki/PuTTY). Cygwin is a unix-like environment for windows. PuTTY is a terminal emulator capable of remote connection to unix/linux servers. Many windows users use PuTTY to connect to remote servers, such as login node of clusters.
-* If you are using linux, you should already know how to start the shell.
+As you can see, the `-l` option changed the output of the `ls`
+command.
 
 
-### Getting help on unix commands
-* type "man commandName", such as `man ls`, this will return the manual page on the given command. Most unix commands have extensive explanations and examples on those pages. Type 'q' on your keyboard to quit the manual view.
-* google the command with "+ unix", this will usually return forums and webpages about the command. Look for example usage and explanations.
+## Getting help
+
+* **Man pages**.  Type "man commandName", such as `man ls`. this will return the
+  manual page on the given command. Most unix commands have extensive
+  explanations and examples on those pages.  Type `q` on your keyboard
+  to quit the manual view.
+* **Info manuals**.  All GNU software comes with extensive manuals,
+  called info pages.  You can read them with the `info` programme on
+  the command line or from within Emacs.  Type `info ls` for the `ls`
+  manual page.  The info pages are hypertext documents with a
+  hierarchical structure and links.  When in `info`, type `H` to learn
+  how to use info.  To open info documentation inside of Emacs issue
+  the command "Ctrl-h i".
+* **Web search**.  Search online for the command followed by "+ unix"
+  or "+ linux", this will usually return forums and webpages about the
+  command.  Look for example usage and explanations.
