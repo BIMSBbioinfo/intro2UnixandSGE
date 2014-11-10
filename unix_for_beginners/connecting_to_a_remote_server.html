@@ -1,0 +1,565 @@
+<!DOCTYPE HTML>
+<html lang="en-US" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Connecting to a remote server with SSH | Introduction to Unix and SGE for beginners</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 1.0.2">
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    
+    
+    
+    <link rel="next" href="../downloading_files_with_wget,_curl_and_ftp/README.html" />
+    
+    
+    <link rel="prev" href="../unix_for_beginners/compressing_and_decompressing_files.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+<link rel="stylesheet" href="../gitbook/style.css">
+
+
+        
+    <div class="book"  data-level="1.5" data-basepath=".." data-revision="1415627804755">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+    	
+    	
+    	
+
+        
+
+        
+    
+        
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                        <i class="fa fa-check"></i>
+                        
+                         Introduction
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1" data-path="unix_for_beginners/README.html">
+            
+                
+                    <a href="../unix_for_beginners/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                         Unix for beginners 
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="1.1" data-path="unix_for_beginners/basics.html">
+            
+                
+                    <a href="../unix_for_beginners/basics.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                         Basics
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.2" data-path="unix_for_beginners/file_management_and_directories.html">
+            
+                
+                    <a href="../unix_for_beginners/file_management_and_directories.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                         File management and directories
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.3" data-path="unix_for_beginners/editing_and_manipulating_files.html">
+            
+                
+                    <a href="../unix_for_beginners/editing_and_manipulating_files.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                         Editing, viewing and concatenating text files
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.4" data-path="unix_for_beginners/compressing_and_decompressing_files.html">
+            
+                
+                    <a href="../unix_for_beginners/compressing_and_decompressing_files.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                         Compressing and decompressing files
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter active" data-level="1.5" data-path="unix_for_beginners/connecting_to_a_remote_server.html">
+            
+                
+                    <a href="../unix_for_beginners/connecting_to_a_remote_server.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                         Connecting to a remote server with SSH
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.6" data-path="downloading_files_with_wget,_curl_and_ftp/README.html">
+            
+                
+                    <a href="../downloading_files_with_wget,_curl_and_ftp/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                         Downloading files with wget, curl and ftp
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.7" data-path="unix_for_beginners/shell_scripting_bash.html">
+            
+                
+                    <a href="../unix_for_beginners/shell_scripting_bash.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                         Simple shell scripting (bash)
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="1.8" data-path="unix_for_beginners/more_on_unix.html">
+            
+                
+                    <a href="../unix_for_beginners/more_on_unix.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                         More on Unix...
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2" data-path="sun_grid_engine_for_beginners/README.html">
+            
+                
+                    <a href="../sun_grid_engine_for_beginners/README.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                         Sun Grid Engine for beginners
+                    </a>
+                
+            
+            
+            <ul class="articles">
+                
+    
+        
+        <li class="chapter " data-level="2.1" data-path="sun_grid_engine_for_beginners/quickstart_and_basics.html">
+            
+                
+                    <a href="../sun_grid_engine_for_beginners/quickstart_and_basics.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                         Quickstart and basics
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.2" data-path="sun_grid_engine_for_beginners/resources_and_queues.html">
+            
+                
+                    <a href="../sun_grid_engine_for_beginners/resources_and_queues.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                         Resources and queues 
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.3" data-path="sun_grid_engine_for_beginners/how_to_submit_a_job_using_qsub.html">
+            
+                
+                    <a href="../sun_grid_engine_for_beginners/how_to_submit_a_job_using_qsub.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                         How to submit a job using qsub
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.4" data-path="sun_grid_engine_for_beginners/how_to_use_interactive_sessions_with_qrsh.html">
+            
+                
+                    <a href="../sun_grid_engine_for_beginners/how_to_use_interactive_sessions_with_qrsh.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                         How to use interactive sessions with qrsh
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.5" data-path="sun_grid_engine_for_beginners/how_to_run_array_jobs.html">
+            
+                
+                    <a href="../sun_grid_engine_for_beginners/how_to_run_array_jobs.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                         How to run array jobs
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.6" data-path="sun_grid_engine_for_beginners/parallel_environments.html">
+            
+                
+                    <a href="../sun_grid_engine_for_beginners/parallel_environments.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                         Parallel environments
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.7" data-path="sun_grid_engine_for_beginners/monitoring_cluster_usage_and_troubleshooting.html">
+            
+                
+                    <a href="../sun_grid_engine_for_beginners/monitoring_cluster_usage_and_troubleshooting.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                         Monitoring cluster usage and troubleshooting
+                    </a>
+                
+            
+            
+        </li>
+    
+        
+        <li class="chapter " data-level="2.8" data-path="sun_grid_engine_for_beginners/faq.html">
+            
+                
+                    <a href="../sun_grid_engine_for_beginners/faq.html">
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                         FAQ
+                    </a>
+                
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">Twitter</button>
+                <button type="button" data-sharing="google-plus" class="button">Google</button>
+                <button type="button" data-sharing="facebook" class="button">Facebook</button>
+                <button type="button" data-sharing="weibo" class="button">Weibo</button>
+                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Introduction to Unix and SGE for beginners</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-gitbook_15">
+                    
+                        <h1 id="connecting-to-a-remote-server-with-ssh">Connecting to a remote server with SSH</h1>
+<p>In a shell session programmes read from and output to text streams
+only.  These input and output streams do not have to be connected to
+local resources; an input stream may just as well be connected to an
+input source on the network and write to an output stream on a
+different machine.  This feature can be used to start a shell session
+on a network host, provided that it accepts such connections.</p>
+<p>Nowadays, for security reasons plain connections to remote machines
+are usually no longer used for shell sessions.  Instead, an encrypted
+connection is negotiated before the shell session is started.  The
+most commonly used way to achieve this is the Secure Shell protocol,
+or short: SSH.  When a remote host (e.g. the login node of a cluster)
+listens for SSH connections (commonly on network port 22) and you have
+credentials to authenticate on the remote host, you can connect to the
+remote and start a shell session there.  This means you can start a
+shell session on a remote computer and use the filesystem and
+resources on that computer.</p>
+<p>To establish a connection to the remote host <code>remote.host.net</code> and
+authenticate as user <code>username</code> execute the following command in a
+regular shell session:</p>
+<pre><code>ssh username@remote.host.net
+</code></pre><p>Dependent on the authentication method you may be asked for the
+password for <code>username</code> on the remote machine before you are admitted.
+You should have a user account on the remote machine to be able to use
+this.  Ask the remote machine&#39;s system administrator if you do not
+have an account.</p>
+<p>The very first time you connect to a remote machine, you will be asked
+if you wish to add the remote host to a list of known hosts, looking
+something like this:</p>
+<pre><code>The authenticity of host &#39;remote.host.net(213.9.122.134)&#39; can&#39;t be established.
+RSA key fingerprint is 53:b4:ad:c8:51:17:99:4b:c9:08:ac:c1:b6:05:71:9b.
+Are you sure you want to continue connecting (yes/no)?
+</code></pre><p>You are asked to confirm your intention to connect because SSH cannot
+guarantee that the remote host is really the host you intend to
+connect to --- it simply has never encounter this host before, so it
+cannot validate the fingerprint against a record from a previous
+connection.  The only way to be sure that the machine is indeed the
+one you want to connect to is to compare the fingerprint manually, but
+this is not feasible for people without physical access to the
+machine.</p>
+<p>When connecting to a cluster node on a local network you can be
+reasonably sure that the connection is safe.  Type <code>yes</code> and press
+enter to continue.  Your SSH client will record the fingerprint for
+this host and prevent you from connecting to a host with the same name
+but a different fingerprint to prevent a man-in-the-middle attack.</p>
+<p>Upon establishing a connection a shell session will be started.
+Confirm that you are on a remote system by running <code>hostname</code>.</p>
+<h2 id="x11-forwarding">X11 forwarding</h2>
+<p>This is a useful feature of SSH because it enables you to see windows
+and bitmap information on the remote host. That means you can use
+programs with a user-interface and can see the visual output of your
+work such as R or matlab plots.</p>
+<p>To use this feature, you need to use -X or -Y option with SHH. See below:</p>
+<pre><code>ssh -X username@remote.host.com
+</code></pre><p>or</p>
+<pre><code>ssh -Y username@remote.host.com
+</code></pre><p>You can check if X11 forwarding works by typing <code>echo $DISPLAY</code>, this
+should return something like <code>localhost:18.0</code>; it should not return an
+empty string.</p>
+<p>To test if this is working, run <code>xeyes</code> on the remote host.  A window
+should appear on your machine.  While the programme runs on the remote
+host, the window contents are forwarded (hence the name) to your local
+machine.  This also works with more complicated applications, but
+performance may be inadequate when doing this over a poor connection.</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../unix_for_beginners/compressing_and_decompressing_files.html" class="navigation navigation-prev " aria-label="Previous page: Compressing and decompressing files"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../downloading_files_with_wget,_curl_and_ftp/README.html" class="navigation navigation-next " aria-label="Next page: Downloading files with wget, curl and ftp"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
+    
+
+    
+    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"ga":{"token":"UA-52320657-1"}};
+    gitbook.start(config);
+});
+</script>
+
+        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-52320657-1', 'auto');ga('send', 'pageview');</script>
+    </body>
+    
+</html>
