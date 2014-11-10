@@ -2,8 +2,9 @@
 
 TARGET=../intro2UnixandSGE_book
 REPO=git@github.com:BIMSBbioinfo/intro2UnixandSGE
+GITBOOK=${GITBOOK:gitbook}
 
-gitbook build -o "$TARGET"
+$GITBOOK build -o "$TARGET"
 
 cd "$TARGET"
 git init
