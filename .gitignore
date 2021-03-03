@@ -1,3 +1,7 @@
-_book
-.DS_Store
-.gitignore~
+book/search_index.json
+book/**.html
+book/downloading_files_with_wget,_curl_and_ftp/
+book/sun_grid_engine_for_beginners/
+book/unix_for_beginners/
+tmp/
+node_modules/

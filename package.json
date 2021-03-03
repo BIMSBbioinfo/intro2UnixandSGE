@@ -1,0 +1,23 @@
+{
+  "name": "shell-intro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "bake-index.js",
+  "dependencies": {
+    "lunr": "^0.5.12"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BIMSBbioinfo/intro2UnixandSGE.git"
+  },
+  "author": "",
+  "license": "gpl3",
+  "bugs": {
+    "url": "https://github.com/BIMSBbioinfo/intro2UnixandSGE/issues"
+  },
+  "homepage": "https://github.com/BIMSBbioinfo/intro2UnixandSGE"
+}

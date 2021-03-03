@@ -25,34 +25,25 @@ You can contribute to the development of this guide using github
 features such as pull-requests and issue creation.
 
 
-### Installing gitbook
+### Build the book
 
-This book is compiled with
-[gitbook](https://github.com/GitbookIO/gitbook), a node.js library.
-Perform these steps to install the gitbook command line tool:
+This book is compiled with pandoc.
 
-- install npm with your system's package manager as root (e.g. `yum
-  install -y npm` on Fedora)
-- install gitbook locally as a regular user with npm: `npm install
-  gitbook`.  This will create a directory `node_modules/.bin` (among
-  others) containing the `gitbook` executable.
+Run `guix environment -m manifest.scm` to enter a suitable environment
+to hack on this book.  Then run `npm install` to install the lunr
+JavaScript library for the search index.
 
 
 ### How to update the book
 
-Edit the .md files using markdown syntax and run **update_book.sh** as
-in `bash update_book.sh -m 'my commit message'`. This will create the
-html from the .md files, re-create **gh-pages** repository (gh-pages
-serves the html pages) and push those changes to **"gh-pages"** branch
-of the online repository. You should also commit the changes you made
-in the **"master"** branch via `git commit`. Basically, **"master"**
-branch has the markdown files, **"gh-pages"** branch has the html
-website.
-
-You may need to pull the repository, make changes and then create
-pull-request if you want your changes to be merged with the main
-repository. This may depend on your privileges
-[to be edited with more accurate information].
+Edit the .md files using markdown syntax and run **bash
+build.sh**. This will regenerate the book and store the files in the
+`book` directory.  Copy the contents of this directory to the
+**gh-pages** branch (the contents of this branch are served by GitHub
+pages) and push those changes to **"gh-pages"** branch of the online
+repository. You should also commit the changes you made in the
+**"master"** branch via `git commit`. Basically, **"master"** branch
+has the markdown files, **"gh-pages"** branch has the html website.
 
 
 ### Acknowledgements
