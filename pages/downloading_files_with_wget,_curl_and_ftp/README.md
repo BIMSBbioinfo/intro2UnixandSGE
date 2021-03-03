@@ -17,7 +17,7 @@ $ wget -O strx25.tar.bz2 http://www.openss7.org/repos/tarballs/strx25-0.9.2.1.ta
 You can also use `wget` to download a file list using **-i** option and giving a text file containing file URLs. Here is an example:
 
 ```
-$ cat > download-file-list.txt
+$ cat download-file-list.txt
 URL1
 URL2
 URL3
