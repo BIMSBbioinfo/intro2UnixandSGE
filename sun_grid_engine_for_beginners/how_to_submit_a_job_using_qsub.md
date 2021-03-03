@@ -1,7 +1,7 @@
 # How to submit a job using qsub
 `qsub` is a command used for submission to the SGE cluster. In the section 2.1 Quickstart and basics, we showed that you can submit an example job using qsub as follows:
 ```
-username@login1:~$ qsub -V -b n -cwd runJob.sh
+username@max-loginX:~$ qsub -V -b n -cwd runJob.sh
 Your job 1 ("runJob.sh") has been submitted
 ```
 The general syntax of how to use qsub is below.
