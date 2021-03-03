@@ -3,7 +3,7 @@ mkdir -p tmp
 
 # Build navigation
 pandoc -f markdown -t html SUMMARY.md | \
-    sed -e 's|\.md|.html|' > book/SUMMARY.html
+    sed -e 's|\.md|.html|' -e 's|href="|href="/intro2UnixandSGE/|' > book/SUMMARY.html
 
 echo '[' > tmp/documents.json
 
