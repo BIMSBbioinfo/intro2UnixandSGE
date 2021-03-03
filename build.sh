@@ -15,7 +15,7 @@ for file in $(find pages -type f -printf '%P\n'); do
     tr \" \' < pages/$file | tr -d "[:punct:]" | \
         pandoc -f gfm \
                -t plain \
-               -V url="$(dirname $file)/$(basename $file .md).html" \
+               -V url="/intro2UnixandSGE/$(dirname $file)/$(basename $file .md).html" \
                -V pagetitle="$title" \
                --template template.json - | tr "\n" " " >> tmp/documents.json
 
