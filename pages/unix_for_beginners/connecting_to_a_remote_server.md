@@ -66,7 +66,7 @@ and bitmap information on the remote host. That means you can use
 programs with a user-interface and can see the visual output of your
 work such as R or matlab plots.
 
-To use this feature, you need to use -X or -Y option with SHH. See below:
+To use this feature, you need to use -X or -Y option with SSH. See below:
 
     ssh -X username@remote.host.com
 
