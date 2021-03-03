@@ -32,7 +32,7 @@ will ask for a machine that has 4GB memory
 Now, we can also ask for more CPU using **-pe** option. This option stands for "parallel environment" and each cluster sets up a set of parallel environments for parallel processing. The syntax for the option is as follows:`-pe [environment name] [number of slots]`. The following will start a job with 4 slots using "smp" environment.
 
 ```powershell
-username@login1:~$ qsub -pe smp 4 -l h_vmem=4G myJob.sh
+username@max-loginX:~$ qsub -pe smp 4 -l h_vmem=4G myJob.sh
 
 ```
 
