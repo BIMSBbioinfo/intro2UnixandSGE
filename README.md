@@ -38,13 +38,22 @@ JavaScript library for the search index.
 
 Edit the .md files using markdown syntax and run **bash
 build.sh**. This will regenerate the book and store the files in the
-`book` directory.  Copy the contents of this directory to the
-**gh-pages** branch (the contents of this branch are served by GitHub
-pages) and push those changes to **"gh-pages"** branch of the online
-repository. You should also commit the changes you made in the
-**"master"** branch via `git commit`. Basically, **"master"** branch
-has the markdown files, **"gh-pages"** branch has the html website.
+`book` directory.
 
+Checkout the **gh-pages** branch.  The contents of this branch are
+served by GitHub pages.  Synchronize the contents of the `book`
+directory with the root directory of that branch, commit the changes
+and push them.
+
+```
+bash build.sh
+... # commit your changes
+git checkout gh-pages
+rsync -azvhr book/ ./
+... # stage the changed files
+git commit -m 'Update book'
+git push origin gh-pages
+```
 
 ### Acknowledgements
 
