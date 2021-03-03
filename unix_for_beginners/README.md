@@ -13,8 +13,8 @@ Apart from being the base of many operating systems, a multitude of
 scientific software currently runs only on Unix-based operating
 systems. Having Unix skills is a desirable attribute for people who
 are analyzing data and working in a scientific environment. In
-addition, Unix skills are necessary to understand Sun Grid Engine
-(SGE) environment and run jobs in SGE clusters.
+addition, Unix skills are necessary to understand the Grid Engine
+environment and run jobs in Grid Engine clusters.
 
 ### What will you learn?
 

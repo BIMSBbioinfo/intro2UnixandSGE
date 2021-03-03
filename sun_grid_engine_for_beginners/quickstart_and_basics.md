@@ -10,7 +10,7 @@ Your job 1 ("runJob.sh") has been submitted
 ```
 - The **-V** option to qsub states that the job should have the same environment variables as the shell executing qsub.
 - The **-b** option to qsub states that the command being executed could be a single binary executable or a bash script. In this case the command hostname is a single binary. This option takes a y or n argument indicating either yes the command is a binary or no it is not a binary.
-- The **-cwd** option to qsub tells Sun Grid Engine that the job should be executed in the same directory that qsub was called.
+- The **-cwd** option to qsub tells Grid Engine that the job should be executed in the same directory that qsub was called.
 - The last argument to qsub is the command to be executed  or script to be run.
 The qsub command, if successful, will print the job number to stdout. See [How to submit a job using qsub] section for more.
 

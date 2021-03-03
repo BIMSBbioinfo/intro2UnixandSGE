@@ -9,7 +9,7 @@
    * [Downloading files with wget, curl and ftp](downloading_files_with_wget,_curl_and_ftp/README.md)
    * [Simple shell scripting (bash)](unix_for_beginners/shell_scripting_bash.md)
    * [More on Unix...](unix_for_beginners/more_on_unix.md)
-* [Sun Grid Engine for beginners](sun_grid_engine_for_beginners/README.md)
+* [Grid Engine for beginners](sun_grid_engine_for_beginners/README.md)
    * [Quickstart and basics](sun_grid_engine_for_beginners/quickstart_and_basics.md)
    * [Resources and queues ](sun_grid_engine_for_beginners/resources_and_queues.md)
    * [How to submit a job using qsub](sun_grid_engine_for_beginners/how_to_submit_a_job_using_qsub.md)

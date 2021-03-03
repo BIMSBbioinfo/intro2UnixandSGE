@@ -1,12 +1,12 @@
 ![Group Logo](http://bioinformatics.mdc-berlin.de/img/GroupLogo.png)
 
-## Introduction to Unix and SGE for beginners
+## Introduction to Unix and Grid Engine for beginners
 
-This is a guide on using unix systems and Sun Grid Engine(SGE) cluster
+This is a guide on using unix systems and the Grid Engine cluster
 environment.
 
 First chapter will introduce basic usage for unix systems. The second
-chapter will explore SGE environment and show how to use the queuing
+chapter will explore the Grid Engine environment and show how to use the queuing
 system from users perspective.
 
 ###  What will you get out of this ?
@@ -16,8 +16,8 @@ After reading, you will:
 * be able to use unix commands to navigate the file system
 * use unix commands to interrogate files
 * understand and write basic bash scripts
-* understand SGE and queueing system
-* be able to submit jobs to SGE cluster and troubleshoot
+* understand Grid Engine and queueing system
+* be able to submit jobs to a Grid Engine cluster and troubleshoot
 
 ### Contribute to the development
 
@@ -58,5 +58,5 @@ repository. This may depend on your privileges
 ### Acknowledgements
 
 Initially created by Altuna Akalin. Some of the material is based on
-Martin Siegert's documentation of SGE cluster.
+Martin Siegert's documentation of the Grid Engine cluster.
 

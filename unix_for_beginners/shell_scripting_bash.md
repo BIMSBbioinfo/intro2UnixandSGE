@@ -1,7 +1,7 @@
 # Shell scripting (bash)
 
 ## What is a shell script?
-A shell script is a text file with a list of shell commands and it is executed like a program to perform a task or a set of tasks. The primary aim of a shell script is to automate tasks and save time. **It is important to understand basic structure of a shell script, since it is you interact with a computing clusters via shell scripts (See next chapter on Sun Grid Engine)**
+A shell script is a text file with a list of shell commands and it is executed like a program to perform a task or a set of tasks. The primary aim of a shell script is to automate tasks and save time. **It is important to understand basic structure of a shell script, since it is you interact with a computing clusters via shell scripts (See next chapter on Grid Engine)**
 
 ## what is Bash ?
 There are many different shells available in Unix systems. Bourne Again Shell (Bash) is one of them, it is the default shell on Linux and MacOS X. It has some advantages to other shells and pretty much the standard shell, and we will show how to use it for scripting below.
