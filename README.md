@@ -30,7 +30,7 @@ features such as pull-requests and issue creation.
 This book is compiled with pandoc.
 
 Run `guix environment -m manifest.scm` to enter a suitable environment
-to hack on this book.  Then run `npm install` to install the lunr
+to hack on this book.  Then run `npm ci` to install the lunr
 JavaScript library for the search index.
 
 
