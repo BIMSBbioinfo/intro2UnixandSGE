@@ -1,582 +1,276 @@
 <!DOCTYPE HTML>
-<html lang="en-US" >
-    
-    <head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/gitbook/style.css">
+    <link rel="stylesheet" href="/gitbook/website.css">
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="book with-summary">
+      <div class="book-summary">
+        <div id="book-search-input" role="search">
+          <input type="text" placeholder="Type to search" />
+        </div>
         
-        <meta charset="UTF-8">
-        <title>Simple shell scripting (bash) | Introduction to Unix and SGE for beginners</title>
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.0.2">
-        <meta name="HandheldFriendly" content="true"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
-        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
-        
-    
-    
-    
-    <link rel="next" href="../unix_for_beginners/more_on_unix.html" />
-    
-    
-    <link rel="prev" href="../downloading_files_with_wget,_curl_and_ftp/README.html" />
-    
+        <nav class="summary" id="TOC" role="doc-toc">
+          <h1 id="summary">Summary</h1>
+          <ul>
+          <li><a href="unix_for_beginners/README.html">Unix for beginners</a>
+          <ul>
+          <li><a href="unix_for_beginners/basics.html">Basics</a></li>
+          <li><a href="unix_for_beginners/file_management_and_directories.html">File management and directories</a></li>
+          <li><a href="unix_for_beginners/editing_and_manipulating_files.html">Editing, viewing and concatenating text files</a></li>
+          <li><a href="unix_for_beginners/compressing_and_decompressing_files.html">Compressing and decompressing files</a></li>
+          <li><a href="unix_for_beginners/connecting_to_a_remote_server.html">Connecting to a remote server with SSH</a></li>
+          <li><a href="downloading_files_with_wget,_curl_and_ftp/README.html">Downloading files with wget, curl and ftp</a></li>
+          <li><a href="unix_for_beginners/shell_scripting_bash.html">Simple shell scripting (bash)</a></li>
+          <li><a href="unix_for_beginners/more_on_unix.html">More on Unix…</a></li>
+          </ul></li>
+          <li><a href="sun_grid_engine_for_beginners/README.html">Grid Engine for beginners</a>
+          <ul>
+          <li><a href="sun_grid_engine_for_beginners/quickstart_and_basics.html">Quickstart and basics</a></li>
+          <li><a href="sun_grid_engine_for_beginners/resources_and_queues.html">Resources and queues</a></li>
+          <li><a href="sun_grid_engine_for_beginners/how_to_submit_a_job_using_qsub.html">How to submit a job using qsub</a></li>
+          <li><a href="sun_grid_engine_for_beginners/how_to_use_interactive_sessions_with_qrsh.html">How to use interactive sessions with qrsh</a></li>
+          <li><a href="sun_grid_engine_for_beginners/how_to_run_array_jobs.html">How to run array jobs</a></li>
+          <li><a href="sun_grid_engine_for_beginners/parallel_environments.html">Parallel environments</a></li>
+          <li><a href="sun_grid_engine_for_beginners/monitoring_cluster_usage_and_troubleshooting.html">Monitoring cluster usage and troubleshooting</a></li>
+          <li><a href="sun_grid_engine_for_beginners/faq.html">FAQ</a></li>
+          </ul></li>
+          </ul>
+        </nav>
+      </div>
 
-        
-    </head>
-    <body>
-        
-        
-<link rel="stylesheet" href="../gitbook/style.css">
-
-
-        
-    <div class="book"  data-level="1.7" data-basepath=".." data-revision="1415627804755">
-    
-
-<div class="book-summary">
-    <div class="book-search">
-        <input type="text" placeholder="Type to search" class="form-control" />
-    </div>
-    <ul class="summary">
-        
-    	
-    	
-    	
-
-        
-
-        
-    
-        
-        <li class="chapter " data-level="0" data-path="index.html">
-            
-                
-                    <a href="../index.html">
-                        <i class="fa fa-check"></i>
-                        
-                         Introduction
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="1" data-path="unix_for_beginners/README.html">
-            
-                
-                    <a href="../unix_for_beginners/README.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.</b>
-                        
-                         Unix for beginners 
-                    </a>
-                
-            
-            
-            <ul class="articles">
-                
-    
-        
-        <li class="chapter " data-level="1.1" data-path="unix_for_beginners/basics.html">
-            
-                
-                    <a href="../unix_for_beginners/basics.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.1.</b>
-                        
-                         Basics
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="1.2" data-path="unix_for_beginners/file_management_and_directories.html">
-            
-                
-                    <a href="../unix_for_beginners/file_management_and_directories.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.2.</b>
-                        
-                         File management and directories
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="1.3" data-path="unix_for_beginners/editing_and_manipulating_files.html">
-            
-                
-                    <a href="../unix_for_beginners/editing_and_manipulating_files.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.3.</b>
-                        
-                         Editing, viewing and concatenating text files
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="1.4" data-path="unix_for_beginners/compressing_and_decompressing_files.html">
-            
-                
-                    <a href="../unix_for_beginners/compressing_and_decompressing_files.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.4.</b>
-                        
-                         Compressing and decompressing files
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="1.5" data-path="unix_for_beginners/connecting_to_a_remote_server.html">
-            
-                
-                    <a href="../unix_for_beginners/connecting_to_a_remote_server.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.5.</b>
-                        
-                         Connecting to a remote server with SSH
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="1.6" data-path="downloading_files_with_wget,_curl_and_ftp/README.html">
-            
-                
-                    <a href="../downloading_files_with_wget,_curl_and_ftp/README.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.6.</b>
-                        
-                         Downloading files with wget, curl and ftp
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter active" data-level="1.7" data-path="unix_for_beginners/shell_scripting_bash.html">
-            
-                
-                    <a href="../unix_for_beginners/shell_scripting_bash.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.7.</b>
-                        
-                         Simple shell scripting (bash)
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="1.8" data-path="unix_for_beginners/more_on_unix.html">
-            
-                
-                    <a href="../unix_for_beginners/more_on_unix.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.8.</b>
-                        
-                         More on Unix...
-                    </a>
-                
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2" data-path="sun_grid_engine_for_beginners/README.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/README.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.</b>
-                        
-                         Sun Grid Engine for beginners
-                    </a>
-                
-            
-            
-            <ul class="articles">
-                
-    
-        
-        <li class="chapter " data-level="2.1" data-path="sun_grid_engine_for_beginners/quickstart_and_basics.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/quickstart_and_basics.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.</b>
-                        
-                         Quickstart and basics
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.2" data-path="sun_grid_engine_for_beginners/resources_and_queues.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/resources_and_queues.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.2.</b>
-                        
-                         Resources and queues 
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.3" data-path="sun_grid_engine_for_beginners/how_to_submit_a_job_using_qsub.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/how_to_submit_a_job_using_qsub.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.3.</b>
-                        
-                         How to submit a job using qsub
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.4" data-path="sun_grid_engine_for_beginners/how_to_use_interactive_sessions_with_qrsh.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/how_to_use_interactive_sessions_with_qrsh.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.4.</b>
-                        
-                         How to use interactive sessions with qrsh
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.5" data-path="sun_grid_engine_for_beginners/how_to_run_array_jobs.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/how_to_run_array_jobs.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.5.</b>
-                        
-                         How to run array jobs
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.6" data-path="sun_grid_engine_for_beginners/parallel_environments.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/parallel_environments.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.6.</b>
-                        
-                         Parallel environments
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.7" data-path="sun_grid_engine_for_beginners/monitoring_cluster_usage_and_troubleshooting.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/monitoring_cluster_usage_and_troubleshooting.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.7.</b>
-                        
-                         Monitoring cluster usage and troubleshooting
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.8" data-path="sun_grid_engine_for_beginners/faq.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/faq.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.8.</b>
-                        
-                         FAQ
-                    </a>
-                
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-
-
-        
-        <li class="divider"></li>
-        <li>
-            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
-        </li>
-        
-    </ul>
-</div>
-
-    <div class="book-body">
+      <div class="book-body">
         <div class="body-inner">
-            <div class="book-header">
-    <!-- Actions Left -->
-    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
-    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
-    
-    <div id="font-settings-wrapper" class="dropdown pull-left">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
-        </a>
-        <div class="dropdown-menu font-settings">
-    <div class="dropdown-caret">
-        <span class="caret-outer"></span>
-        <span class="caret-inner"></span>
-    </div>
-
-    <div class="buttons">
-        <button type="button" id="reduce-font-size" class="button size-2">A</button>
-        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
-    </div>
-
-    <div class="buttons font-family-list">
-        <button type="button" data-font="0" class="button">Serif</button>
-        <button type="button" data-font="1" class="button">Sans</button>
-    </div>
-
-    <div class="buttons color-theme-list">
-        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
-        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
-        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
-    </div>
-</div>
-
-    </div>
-
-    <!-- Actions Right -->
-    
-    <div class="dropdown pull-right">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
-        </a>
-        <div class="dropdown-menu font-settings dropdown-left">
-            <div class="dropdown-caret">
-                <span class="caret-outer"></span>
-                <span class="caret-inner"></span>
-            </div>
-            <div class="buttons">
-                <button type="button" data-sharing="twitter" class="button">Twitter</button>
-                <button type="button" data-sharing="google-plus" class="button">Google</button>
-                <button type="button" data-sharing="facebook" class="button">Facebook</button>
-                <button type="button" data-sharing="weibo" class="button">Weibo</button>
-                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
-            </div>
-        </div>
-    </div>
-    
-
-    
-    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
-    
-    
-
-    <!-- Title -->
-    <h1>
-        <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../" >Introduction to Unix and SGE for beginners</a>
-    </h1>
-</div>
-
-            <div class="page-wrapper" tabindex="-1">
-                <div class="page-inner">
-                
-                
-                    <section class="normal" id="section-gitbook_19">
+          <div class="book-header" role="navigation">
+            <!-- Title -->
+            <h1>
+              <i class="fa fa-circle-o-notch fa-spin"></i>
+              <a href="." ></a>
+            </h1>
+          </div>
+          <div class="page-wrapper" tabindex="-1" role="main">
+            <div class="page-inner">
+              <div id="book-search-results">
+                <div class="search-noresults">
+                  <section class="normal markdown-section">
+                    <h1 id="shell-scripting-bash">Shell scripting (bash)</h1>
+                    <h2 id="what-is-a-shell-script">What is a shell script?</h2>
+                    <p>A shell script is a text file with a list of shell commands and it is executed like a program to perform a task or a set of tasks. The primary aim of a shell script is to automate tasks and save time. <strong>It is important to understand basic structure of a shell script, since it is you interact with a computing clusters via shell scripts (See next chapter on Grid Engine)</strong></p>
+                    <h2 id="what-is-bash-">what is Bash ?</h2>
+                    <p>There are many different shells available in Unix-like systems. The Bourne Again Shell (Bash) is one of them, it is the default shell on GNU/Linux systems. It has some advantages to other shells and is pretty much the standard shell, and we will show how to use it for scripting below.</p>
+                    <h2 id="writing-a-simple-bash-shell-script">Writing a simple bash shell script</h2>
+                    <p>A basic shell script is just a series of commands. That is what we will show next.</p>
+                    <p>Let us write a simple script that outputs “hello world” on the screen using the <code>echo</code> command. We will save the text file as <code>myScript.sh</code></p>
+                    <pre><code>  #!/bin/bash
+                      echo Hello World</code></pre>
+                    <p><strong>executing a shell script</strong> syntax:<code>bash your-script-name</code>. In our case, we write:</p>
+                    <pre><code>$ bash myScript.sh
+                    Hello World</code></pre>
+                    <h3 id="more-complicated-example">more complicated example</h3>
+                    <p>Let’s write a bit more complicated script using more of the shell commands. The script uses the <code>ls</code> to list the files and uses <code>wc -l</code> command which counts number of lines in a given file or standard input. In this case, <code>wc -l</code> counts the number of lines in the output of <code>ls -l</code>. All this achieved by using pipe <code>|</code>.</p>
+                    <p>contents of script.sh:</p>
+                    <pre><code> #!/bin/bash
+                     echo here are the list of files
+                     ls -l
                     
-                        <h1 id="shell-scripting-bash">Shell scripting (bash)</h1>
-<h2 id="what-is-a-shell-script">What is a shell script?</h2>
-<p>A shell script is a text file with a list of shell commands and it is executed like a program to perform a task or a set of tasks. The primary aim of a shell script is to automate tasks and save time. <strong>It is important to understand basic structure of a shell script, since it is you interact with a computing clusters via shell scripts (See next chapter on Sun Grid Engine)</strong></p>
-<h2 id="what-is-bash-">what is Bash ?</h2>
-<p>There are many different shells available in Unix systems. Bourne Again Shell (Bash) is one of them, it is the default shell on Linux and MacOS X. It has some advantages to other shells and pretty much the standard shell, and we will show how to use it for scripting below.</p>
-<h2 id="writing-a-simple-bash-shell-script">Writing a simple bash shell script</h2>
-<p>A basic shell script is just a series of commands. That is what we will show next.</p>
-<p>Let us write a simple script that outputs &quot;hello world&quot; on the screen using the <code>echo</code> command. We will save the text file as <code>myScript.sh</code></p>
-<pre><code>  #!/bin/bash
-  echo Hello World
-</code></pre><p><strong>executing a shell script</strong>
-syntax:<code>bash your-script-name</code>. In our case, we write:</p>
-<pre><code>$ bash myScript.sh
-Hello World
-</code></pre><h3 id="more-complicated-example">more complicated example</h3>
-<p>Let&#39;s write a bit more complicated script using more of the shell commands. The script uses the <code>ls</code> to list the files and uses <code>wc -l</code> command which counts number of lines in a given file or standard input. In this case, <code>wc -l</code> counts the number of lines in the output of <code>ls -l</code>. All this achieved by using pipe <code>|</code>.</p>
-<p>contents of script.sh:</p>
-<pre><code> #!/bin/bash
- echo here are the list of files
- ls -l
-
- echo  The number of files:
- ls -l | wc -l
-</code></pre><p>We can execute it as follows:</p>
-<pre><code>$ bash script.sh
-</code></pre><h3 id="variables-in-bash-scripts">variables in bash scripts</h3>
-<p>You can also use variables in bash scripts. Which are useful to capture the output of intermediate commands and use them to run other commands.There are no data types for variables. A variable in bash can contain any of the following: a number, a character or a string of characters.</p>
-<p>You do not need to declare a variable, just assigning a value to its reference will create it.</p>
-<p>Now we will create a simple script with one variable. We will assign <code>Hello world</code> string to that variable and print that variable with <code>echo</code>.</p>
-<pre><code> #!/bin/bash
- VAR=&quot;Hello world&quot;
-
- echo  $VAR
-</code></pre><p>When assigning the variable we did not use the <code>$</code> sign, but when using the variable we had to use the <code>$</code> sign.</p>
-<h3 id="command-line-arguments-in-bash-scripts">command line arguments in bash scripts</h3>
-<p>The script can also take command line arguments. Here we modify the script that lists the file to take a command line argument. The argument will be a path to a directory.</p>
-<p>contents of script2.sh:</p>
-<pre><code> #!/bin/bash
- VAR=$1
- echo here are the list of files
- ls -l $VAR
-
- echo  The number of files:
- ls -l $VAR | wc -l
-</code></pre><p>Here is how you run the script:</p>
-<pre><code>$ bash script2.sh /home/user/project
-</code></pre><p>The arguments are stored in variables with a number in the order of the argument starting at 1</p>
-<ul>
-<li>First Argument: $1</li>
-<li>Second Argument: $2</li>
-<li>and so on...</li>
-</ul>
-<p>In the our case, <code>$1</code> corresponds to <code>/home/user/project</code>.</p>
-<h3 id="arithmetic-operations-bash-scripts">Arithmetic operations bash scripts</h3>
-<p>Arithmetic operations on integers in bash are done in the following format:</p>
-<pre><code>#!/bin/bash
-x=6
-y=2
-$((10 - 5))
-$((x-y))
-
-echo $((x-y))
-echo $((10-5))
-</code></pre><p>You can also copy paste these commands to the console to see how they work. The <code>echo</code> commands should output <code>4</code> and <code>5</code>.</p>
-<p>Bash arithmetic does not support floating points (e.g. 1.3 -1  operation will not work in bash), you need to use <code>bc</code> command. See <a href="http://stackoverflow.com/questions/12147040/division-in-script-and-floating-point" target="_blank">this stackOverflow example</a> for an example on how to use  <code>bc</code>.</p>
-<h3 id="looping-over-files">Looping over files</h3>
-<p>If you are trying to automate a task using bash scripting, it is very likely you will have to apply certain commands on each file in a directory. This could be achieved with wild character<code>*</code> and <code>for</code> loops. The following script stores all the &#39;.txt&#39; files in <code>/path/to</code> directory in <code>FILES</code> variable. Then, for each file it calculates number of lines and outputs that with <code>wc -l</code> command.</p>
-<pre><code>#!/bin/bash
-FILES=/path/to/*.txt
-for f in $FILES
-do
-  echo &quot;Processing $f file...&quot;
-  # count number of lines and output that for file $f
-  wc -l $f
-done
-</code></pre><h2 id="more-on-bash-scripts">More on bash scripts</h2>
-<p>You can write even more complicated shell scripts using control structures (if/else, for/while loops) and achieve a lot just using the shell scripting, but that is beyond the scope of the document. See the links below if you want to get better at writing shell scripts.</p>
-<ul>
-<li><a href="http://www.freeos.com/guides/lsst/" target="_blank">http://www.freeos.com/guides/lsst/</a></li>
-<li><a href="http://www.tldp.org/LDP/Bash-Beginners-Guide/html/" target="_blank">http://www.tldp.org/LDP/Bash-Beginners-Guide/html/</a></li>
-</ul>
-
+                     echo  The number of files:
+                     ls -l | wc -l
+                    </code></pre>
+                    <p>We can execute it as follows:</p>
+                    <pre><code>$ bash script.sh</code></pre>
+                    <h3 id="variables-in-bash-scripts">variables in bash scripts</h3>
+                    <p>You can also use variables in bash scripts. Which are useful to capture the output of intermediate commands and use them to run other commands.There are no data types for variables. A variable in bash can contain any of the following: a number, a character or a string of characters.</p>
+                    <p>You do not need to declare a variable, just assigning a value to its reference will create it.</p>
+                    <p>Now we will create a simple script with one variable. We will assign <code>Hello world</code> string to that variable and print that variable with <code>echo</code>.</p>
+                    <pre><code> #!/bin/bash
+                     VAR=&quot;Hello world&quot;
                     
-                    </section>
-                
-                
+                     echo  $VAR
+                    </code></pre>
+                    <p>When assigning the variable we did not use the <code>$</code> sign, but when using the variable we had to use the <code>$</code> sign.</p>
+                    <h3 id="command-line-arguments-in-bash-scripts">command line arguments in bash scripts</h3>
+                    <p>The script can also take command line arguments. Here we modify the script that lists the file to take a command line argument. The argument will be a path to a directory.</p>
+                    <p>contents of script2.sh:</p>
+                    <pre><code> #!/bin/bash
+                     VAR=$1
+                     echo here are the list of files
+                     ls -l $VAR
+                    
+                     echo  The number of files:
+                     ls -l $VAR | wc -l
+                    </code></pre>
+                    <p>Here is how you run the script:</p>
+                    <pre><code>$ bash script2.sh /home/user/project</code></pre>
+                    <p>The arguments are stored in variables with a number in the order of the argument starting at 1</p>
+                    <ul>
+                    <li>First Argument: $1</li>
+                    <li>Second Argument: $2</li>
+                    <li>and so on…</li>
+                    </ul>
+                    <p>In the our case, <code>$1</code> corresponds to <code>/home/user/project</code>.</p>
+                    <h3 id="arithmetic-operations-bash-scripts">Arithmetic operations bash scripts</h3>
+                    <p>Arithmetic operations on integers in bash are done in the following format:</p>
+                    <pre><code>#!/bin/bash
+                    x=6
+                    y=2
+                    $((10 - 5))
+                    $((x-y))
+                    
+                    echo $((x-y))
+                    echo $((10-5))</code></pre>
+                    <p>You can also copy paste these commands to the console to see how they work. The <code>echo</code> commands should output <code>4</code> and <code>5</code>.</p>
+                    <p>Bash arithmetic does not support floating points (e.g. 1.3 -1 operation will not work in bash), you need to use <code>bc</code> command. See <a href="http://stackoverflow.com/questions/12147040/division-in-script-and-floating-point">this stackOverflow example</a> for an example on how to use <code>bc</code>.</p>
+                    <h3 id="looping-over-files">Looping over files</h3>
+                    <p>If you are trying to automate a task using bash scripting, it is very likely you will have to apply certain commands on each file in a directory. This could be achieved with wild character<code>*</code> and <code>for</code> loops. The following script stores all the ‘.txt’ files in <code>/path/to</code> directory in <code>FILES</code> variable. Then, for each file it calculates number of lines and outputs that with <code>wc -l</code> command.</p>
+                    <pre><code>#!/bin/bash
+                    FILES=/path/to/*.txt
+                    for f in $FILES
+                    do
+                      echo &quot;Processing $f file...&quot;
+                      # count number of lines and output that for file $f
+                      wc -l $f
+                    done
+                    </code></pre>
+                    <h2 id="more-on-bash-scripts">More on bash scripts</h2>
+                    <p>You can write even more complicated shell scripts using control structures (if/else, for/while loops) and achieve a lot just using the shell scripting, but that is beyond the scope of the document. See the links below if you want to get better at writing shell scripts.</p>
+                    <ul>
+                    <li><a href="http://www.freeos.com/guides/lsst/" class="uri">http://www.freeos.com/guides/lsst/</a></li>
+                    <li><a href="http://www.tldp.org/LDP/Bash-Beginners-Guide/html/" class="uri">http://www.tldp.org/LDP/Bash-Beginners-Guide/html/</a></li>
+                    </ul>
+                  </section>
                 </div>
+                <div class="search-results">
+                  <div class="has-results">
+                    <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+                    <ul class="search-results-list"></ul>
+                  </div>
+                  <div class="no-results">
+                    <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-
-        
-        <a href="../downloading_files_with_wget,_curl_and_ftp/README.html" class="navigation navigation-prev " aria-label="Previous page: Downloading files with wget, curl and ftp"><i class="fa fa-angle-left"></i></a>
-        
-        
-        <a href="../unix_for_beginners/more_on_unix.html" class="navigation navigation-next " aria-label="Next page: More on Unix..."><i class="fa fa-angle-right"></i></a>
-        
+      </div>
+      <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+          gitbook.page.hasChanged(
+            {
+              "page":
+              {
+                "title":"",
+                "level":"1.1",
+                "depth":1,
+                "next":{},
+                "dir":"ltr"
+              },
+              "config":
+              {
+                "gitbook":"*",
+                "theme":"default",
+                "variables":{},
+                "plugins":[],
+                "pluginsConfig":
+                {
+                  "highlight":{},
+                  "search":{},
+                  "lunr": {
+                    "maxIndexSize":1000000,
+                    "ignoreSpecialCharacters":false
+                  },
+                  "sharing": {
+                    "facebook":true,
+                    "twitter":true,
+                    "google":false,
+                    "weibo":false,
+                    "instapaper":false,
+                    "vk":false,
+                    "all":[
+                      "facebook",
+                      "google",
+                      "twitter",
+                      "weibo",
+                      "instapaper"
+                    ]},
+                  "fontsettings": {
+                    "theme":"white",
+                    "family":"sans",
+                    "size":2
+                  },
+                  "theme-default": {
+                    "styles": {
+                      "website":"styles/website.css",
+                      "pdf":"styles/pdf.css",
+                      "epub":"styles/epub.css",
+                      "mobi":"styles/mobi.css",
+                      "ebook":"styles/ebook.css",
+                      "print":"styles/print.css"
+                    },
+                    "showLevel":false
+                  }
+                },
+                "structure": {
+                  "langs":"LANGS.md",
+                  "readme":"README.md",
+                  "glossary":"GLOSSARY.md",
+                  "summary":"SUMMARY.md"
+                },
+                "pdf": {
+                  "pageNumbers":true,
+                  "fontSize":12,
+                  "fontFamily":"Arial",
+                  "paperSize":"a4",
+                  "chapterMark":"pagebreak",
+                  "pageBreaksBefore":"/",
+                  "margin": {
+                    "right":62,"left":62,"top":56,"bottom":56
+                  }
+                },
+                "styles": {
+                  "website":"styles/website.css",
+                  "pdf":"styles/pdf.css",
+                  "epub":"styles/epub.css",
+                  "mobi":"styles/mobi.css",
+                  "ebook":"styles/ebook.css",
+                  "print":"styles/print.css"
+                }
+              },
+              "file": {
+                "path":"",
+                "mtime":"",
+                "type":"markdown"
+              },
+              "gitbook": {
+                "version":"3.2.3",
+                "time":"2019-07-08T15:24:30.549Z"
+              },
+              "basePath":".",
+              "book": {"language":""}});
+        });
+    </script>
     </div>
-</div>
-
-        
-<script src="../gitbook/app.js"></script>
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
-    
-
-    
-    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
-    
-
-<script>
-require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"ga":{"token":"UA-52320657-1"}};
-    gitbook.start(config);
-});
-</script>
-
-        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-52320657-1', 'auto');ga('send', 'pageview');</script>
-    </body>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+    <script src="gitbook/gitbook-plugin-search/search.js"></script>
+    <script src="gitbook/gitbook-plugin-lunr/lunr.js"></script>
+    <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+    <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+    <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+  </body>
 </html>

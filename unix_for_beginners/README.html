@@ -1,526 +1,207 @@
 <!DOCTYPE HTML>
-<html lang="en-US" >
-    
-    <head>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="">
+    <link rel="stylesheet" href="/gitbook/style.css">
+    <link rel="stylesheet" href="/gitbook/website.css">
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="book with-summary">
+      <div class="book-summary">
+        <div id="book-search-input" role="search">
+          <input type="text" placeholder="Type to search" />
+        </div>
         
-        <meta charset="UTF-8">
-        <title>Unix for beginners  | Introduction to Unix and SGE for beginners</title>
-        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <meta name="description" content="">
-        <meta name="generator" content="GitBook 1.0.2">
-        <meta name="HandheldFriendly" content="true"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-        <meta name="apple-mobile-web-app-capable" content="yes">
-        <meta name="apple-mobile-web-app-status-bar-style" content="black">
-        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
-        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
-        
-    
-    
-    
-    <link rel="next" href="../unix_for_beginners/basics.html" />
-    
-    
-    <link rel="prev" href="../index.html" />
-    
+        <nav class="summary" id="TOC" role="doc-toc">
+          <h1 id="summary">Summary</h1>
+          <ul>
+          <li><a href="unix_for_beginners/README.html">Unix for beginners</a>
+          <ul>
+          <li><a href="unix_for_beginners/basics.html">Basics</a></li>
+          <li><a href="unix_for_beginners/file_management_and_directories.html">File management and directories</a></li>
+          <li><a href="unix_for_beginners/editing_and_manipulating_files.html">Editing, viewing and concatenating text files</a></li>
+          <li><a href="unix_for_beginners/compressing_and_decompressing_files.html">Compressing and decompressing files</a></li>
+          <li><a href="unix_for_beginners/connecting_to_a_remote_server.html">Connecting to a remote server with SSH</a></li>
+          <li><a href="downloading_files_with_wget,_curl_and_ftp/README.html">Downloading files with wget, curl and ftp</a></li>
+          <li><a href="unix_for_beginners/shell_scripting_bash.html">Simple shell scripting (bash)</a></li>
+          <li><a href="unix_for_beginners/more_on_unix.html">More on Unix…</a></li>
+          </ul></li>
+          <li><a href="sun_grid_engine_for_beginners/README.html">Grid Engine for beginners</a>
+          <ul>
+          <li><a href="sun_grid_engine_for_beginners/quickstart_and_basics.html">Quickstart and basics</a></li>
+          <li><a href="sun_grid_engine_for_beginners/resources_and_queues.html">Resources and queues</a></li>
+          <li><a href="sun_grid_engine_for_beginners/how_to_submit_a_job_using_qsub.html">How to submit a job using qsub</a></li>
+          <li><a href="sun_grid_engine_for_beginners/how_to_use_interactive_sessions_with_qrsh.html">How to use interactive sessions with qrsh</a></li>
+          <li><a href="sun_grid_engine_for_beginners/how_to_run_array_jobs.html">How to run array jobs</a></li>
+          <li><a href="sun_grid_engine_for_beginners/parallel_environments.html">Parallel environments</a></li>
+          <li><a href="sun_grid_engine_for_beginners/monitoring_cluster_usage_and_troubleshooting.html">Monitoring cluster usage and troubleshooting</a></li>
+          <li><a href="sun_grid_engine_for_beginners/faq.html">FAQ</a></li>
+          </ul></li>
+          </ul>
+        </nav>
+      </div>
 
-        
-    </head>
-    <body>
-        
-        
-<link rel="stylesheet" href="../gitbook/style.css">
-
-
-        
-    <div class="book"  data-level="1" data-basepath=".." data-revision="1415627804755">
-    
-
-<div class="book-summary">
-    <div class="book-search">
-        <input type="text" placeholder="Type to search" class="form-control" />
-    </div>
-    <ul class="summary">
-        
-    	
-    	
-    	
-
-        
-
-        
-    
-        
-        <li class="chapter " data-level="0" data-path="index.html">
-            
-                
-                    <a href="../index.html">
-                        <i class="fa fa-check"></i>
-                        
-                         Introduction
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter active" data-level="1" data-path="unix_for_beginners/README.html">
-            
-                
-                    <a href="../unix_for_beginners/README.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.</b>
-                        
-                         Unix for beginners 
-                    </a>
-                
-            
-            
-            <ul class="articles">
-                
-    
-        
-        <li class="chapter " data-level="1.1" data-path="unix_for_beginners/basics.html">
-            
-                
-                    <a href="../unix_for_beginners/basics.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.1.</b>
-                        
-                         Basics
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="1.2" data-path="unix_for_beginners/file_management_and_directories.html">
-            
-                
-                    <a href="../unix_for_beginners/file_management_and_directories.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.2.</b>
-                        
-                         File management and directories
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="1.3" data-path="unix_for_beginners/editing_and_manipulating_files.html">
-            
-                
-                    <a href="../unix_for_beginners/editing_and_manipulating_files.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.3.</b>
-                        
-                         Editing, viewing and concatenating text files
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="1.4" data-path="unix_for_beginners/compressing_and_decompressing_files.html">
-            
-                
-                    <a href="../unix_for_beginners/compressing_and_decompressing_files.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.4.</b>
-                        
-                         Compressing and decompressing files
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="1.5" data-path="unix_for_beginners/connecting_to_a_remote_server.html">
-            
-                
-                    <a href="../unix_for_beginners/connecting_to_a_remote_server.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.5.</b>
-                        
-                         Connecting to a remote server with SSH
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="1.6" data-path="downloading_files_with_wget,_curl_and_ftp/README.html">
-            
-                
-                    <a href="../downloading_files_with_wget,_curl_and_ftp/README.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.6.</b>
-                        
-                         Downloading files with wget, curl and ftp
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="1.7" data-path="unix_for_beginners/shell_scripting_bash.html">
-            
-                
-                    <a href="../unix_for_beginners/shell_scripting_bash.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.7.</b>
-                        
-                         Simple shell scripting (bash)
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="1.8" data-path="unix_for_beginners/more_on_unix.html">
-            
-                
-                    <a href="../unix_for_beginners/more_on_unix.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.8.</b>
-                        
-                         More on Unix...
-                    </a>
-                
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2" data-path="sun_grid_engine_for_beginners/README.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/README.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.</b>
-                        
-                         Sun Grid Engine for beginners
-                    </a>
-                
-            
-            
-            <ul class="articles">
-                
-    
-        
-        <li class="chapter " data-level="2.1" data-path="sun_grid_engine_for_beginners/quickstart_and_basics.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/quickstart_and_basics.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.1.</b>
-                        
-                         Quickstart and basics
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.2" data-path="sun_grid_engine_for_beginners/resources_and_queues.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/resources_and_queues.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.2.</b>
-                        
-                         Resources and queues 
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.3" data-path="sun_grid_engine_for_beginners/how_to_submit_a_job_using_qsub.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/how_to_submit_a_job_using_qsub.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.3.</b>
-                        
-                         How to submit a job using qsub
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.4" data-path="sun_grid_engine_for_beginners/how_to_use_interactive_sessions_with_qrsh.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/how_to_use_interactive_sessions_with_qrsh.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.4.</b>
-                        
-                         How to use interactive sessions with qrsh
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.5" data-path="sun_grid_engine_for_beginners/how_to_run_array_jobs.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/how_to_run_array_jobs.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.5.</b>
-                        
-                         How to run array jobs
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.6" data-path="sun_grid_engine_for_beginners/parallel_environments.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/parallel_environments.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.6.</b>
-                        
-                         Parallel environments
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.7" data-path="sun_grid_engine_for_beginners/monitoring_cluster_usage_and_troubleshooting.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/monitoring_cluster_usage_and_troubleshooting.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.7.</b>
-                        
-                         Monitoring cluster usage and troubleshooting
-                    </a>
-                
-            
-            
-        </li>
-    
-        
-        <li class="chapter " data-level="2.8" data-path="sun_grid_engine_for_beginners/faq.html">
-            
-                
-                    <a href="../sun_grid_engine_for_beginners/faq.html">
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.8.</b>
-                        
-                         FAQ
-                    </a>
-                
-            
-            
-        </li>
-    
-
-            </ul>
-            
-        </li>
-    
-
-
-        
-        <li class="divider"></li>
-        <li>
-            <a href="http://www.gitbook.io/" target="blank" class="gitbook-link">Published using GitBook</a>
-        </li>
-        
-    </ul>
-</div>
-
-    <div class="book-body">
+      <div class="book-body">
         <div class="body-inner">
-            <div class="book-header">
-    <!-- Actions Left -->
-    <a href="#" class="btn pull-left toggle-summary" aria-label="Toggle summary"><i class="fa fa-align-justify"></i></a>
-    <a href="#" class="btn pull-left toggle-search" aria-label="Toggle search"><i class="fa fa-search"></i></a>
-    
-    <div id="font-settings-wrapper" class="dropdown pull-left">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle font settings"><i class="fa fa-font"></i>
-        </a>
-        <div class="dropdown-menu font-settings">
-    <div class="dropdown-caret">
-        <span class="caret-outer"></span>
-        <span class="caret-inner"></span>
-    </div>
-
-    <div class="buttons">
-        <button type="button" id="reduce-font-size" class="button size-2">A</button>
-        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
-    </div>
-
-    <div class="buttons font-family-list">
-        <button type="button" data-font="0" class="button">Serif</button>
-        <button type="button" data-font="1" class="button">Sans</button>
-    </div>
-
-    <div class="buttons color-theme-list">
-        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
-        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
-        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
-    </div>
-</div>
-
-    </div>
-
-    <!-- Actions Right -->
-    
-    <div class="dropdown pull-right">
-        <a href="#" class="btn toggle-dropdown" aria-label="Toggle share dropdown"><i class="fa fa-share-alt"></i>
-        </a>
-        <div class="dropdown-menu font-settings dropdown-left">
-            <div class="dropdown-caret">
-                <span class="caret-outer"></span>
-                <span class="caret-inner"></span>
-            </div>
-            <div class="buttons">
-                <button type="button" data-sharing="twitter" class="button">Twitter</button>
-                <button type="button" data-sharing="google-plus" class="button">Google</button>
-                <button type="button" data-sharing="facebook" class="button">Facebook</button>
-                <button type="button" data-sharing="weibo" class="button">Weibo</button>
-                <button type="button" data-sharing="instapaper" class="button">Instapaper</button>
-            </div>
-        </div>
-    </div>
-    
-
-    
-    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Share on Google Plus"><i class="fa fa-google-plus"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Share on Facebook"><i class="fa fa-facebook"></i></a>
-    
-    
-    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Share on Twitter"><i class="fa fa-twitter"></i></a>
-    
-    
-
-    <!-- Title -->
-    <h1>
-        <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../" >Introduction to Unix and SGE for beginners</a>
-    </h1>
-</div>
-
-            <div class="page-wrapper" tabindex="-1">
-                <div class="page-inner">
-                
-                
-                    <section class="normal" id="section-gitbook_12">
-                    
-                        <h1 id="unix-for-beginners">Unix for beginners</h1>
-<h3 id="unix">Unix</h3>
-<p>Unix is an operating system similar to DOS and Windows supporting
-multiple users.  It was designed at Bell labs in the 1970s. Many other
-operating systems such as Linux and Mac OS X are based on Unix
-operating system or behave like Unix systems.</p>
-<h3 id="why-should-you-learn-unix">Why should you learn Unix?</h3>
-<p>Apart from being the base of many operating systems, a multitude of
-scientific software currently runs only on Unix-based operating
-systems. Having Unix skills is a desirable attribute for people who
-are analyzing data and working in a scientific environment. In
-addition, Unix skills are necessary to understand Sun Grid Engine
-(SGE) environment and run jobs in SGE clusters.</p>
-<h3 id="what-will-you-learn">What will you learn?</h3>
-<p>In this section, you will be learning:</p>
-<ul>
-<li>File management and directories (commands: <code>ls</code>, <code>cd</code>, <code>cp</code>, <code>mv</code>,
-<code>rm</code>)</li>
-<li>Editing, viewing and concatenating text files (commands: <code>more</code>,
-<code>less</code>, <code>head</code>, <code>tail</code>, <code>cat</code>, <code>cut</code> etc.)</li>
-<li>Compressing and decompressing files (commands: <code>gzip</code> and <code>zcat</code>)</li>
-<li>Connecting to a remote server with ssh</li>
-<li>Downloading files with <code>wget</code>, <code>curl</code> and <code>ftp</code></li>
-<li>Simple shell scripts with bash</li>
-</ul>
-
-                    
-                    </section>
-                
-                
+          <div class="book-header" role="navigation">
+            <!-- Title -->
+            <h1>
+              <i class="fa fa-circle-o-notch fa-spin"></i>
+              <a href="." ></a>
+            </h1>
+          </div>
+          <div class="page-wrapper" tabindex="-1" role="main">
+            <div class="page-inner">
+              <div id="book-search-results">
+                <div class="search-noresults">
+                  <section class="normal markdown-section">
+                    <h1 id="unix-for-beginners">Unix for beginners</h1>
+                    <h3 id="unix">Unix</h3>
+                    <p>Unix is an operating system similar to DOS and Windows supporting multiple users. It was designed at Bell labs in the 1970s. Many other operating systems such as Linux and Mac OS X are based on Unix operating system or behave like Unix systems.</p>
+                    <h3 id="why-should-you-learn-unix">Why should you learn Unix?</h3>
+                    <p>Apart from being the base of many operating systems, a multitude of scientific software currently runs only on Unix-based operating systems. Having Unix skills is a desirable attribute for people who are analyzing data and working in a scientific environment. In addition, Unix skills are necessary to understand the Grid Engine environment and run jobs in Grid Engine clusters.</p>
+                    <h3 id="what-will-you-learn">What will you learn?</h3>
+                    <p>In this section, you will be learning:</p>
+                    <ul>
+                    <li>File management and directories (commands: <code>ls</code>, <code>cd</code>, <code>cp</code>, <code>mv</code>, <code>rm</code>)</li>
+                    <li>Editing, viewing and concatenating text files (commands: <code>more</code>, <code>less</code>, <code>head</code>, <code>tail</code>, <code>cat</code>, <code>cut</code> etc.)</li>
+                    <li>Compressing and decompressing files (commands: <code>gzip</code> and <code>zcat</code>)</li>
+                    <li>Connecting to a remote server with ssh</li>
+                    <li>Downloading files with <code>wget</code>, <code>curl</code> and <code>ftp</code></li>
+                    <li>Simple shell scripts with bash</li>
+                    </ul>
+                  </section>
                 </div>
+                <div class="search-results">
+                  <div class="has-results">
+                    <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+                    <ul class="search-results-list"></ul>
+                  </div>
+                  <div class="no-results">
+                    <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
-
-        
-        <a href="../index.html" class="navigation navigation-prev " aria-label="Previous page: Introduction"><i class="fa fa-angle-left"></i></a>
-        
-        
-        <a href="../unix_for_beginners/basics.html" class="navigation navigation-next " aria-label="Next page: Basics"><i class="fa fa-angle-right"></i></a>
-        
+      </div>
+      <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+          gitbook.page.hasChanged(
+            {
+              "page":
+              {
+                "title":"",
+                "level":"1.1",
+                "depth":1,
+                "next":{},
+                "dir":"ltr"
+              },
+              "config":
+              {
+                "gitbook":"*",
+                "theme":"default",
+                "variables":{},
+                "plugins":[],
+                "pluginsConfig":
+                {
+                  "highlight":{},
+                  "search":{},
+                  "lunr": {
+                    "maxIndexSize":1000000,
+                    "ignoreSpecialCharacters":false
+                  },
+                  "sharing": {
+                    "facebook":true,
+                    "twitter":true,
+                    "google":false,
+                    "weibo":false,
+                    "instapaper":false,
+                    "vk":false,
+                    "all":[
+                      "facebook",
+                      "google",
+                      "twitter",
+                      "weibo",
+                      "instapaper"
+                    ]},
+                  "fontsettings": {
+                    "theme":"white",
+                    "family":"sans",
+                    "size":2
+                  },
+                  "theme-default": {
+                    "styles": {
+                      "website":"styles/website.css",
+                      "pdf":"styles/pdf.css",
+                      "epub":"styles/epub.css",
+                      "mobi":"styles/mobi.css",
+                      "ebook":"styles/ebook.css",
+                      "print":"styles/print.css"
+                    },
+                    "showLevel":false
+                  }
+                },
+                "structure": {
+                  "langs":"LANGS.md",
+                  "readme":"README.md",
+                  "glossary":"GLOSSARY.md",
+                  "summary":"SUMMARY.md"
+                },
+                "pdf": {
+                  "pageNumbers":true,
+                  "fontSize":12,
+                  "fontFamily":"Arial",
+                  "paperSize":"a4",
+                  "chapterMark":"pagebreak",
+                  "pageBreaksBefore":"/",
+                  "margin": {
+                    "right":62,"left":62,"top":56,"bottom":56
+                  }
+                },
+                "styles": {
+                  "website":"styles/website.css",
+                  "pdf":"styles/pdf.css",
+                  "epub":"styles/epub.css",
+                  "mobi":"styles/mobi.css",
+                  "ebook":"styles/ebook.css",
+                  "print":"styles/print.css"
+                }
+              },
+              "file": {
+                "path":"",
+                "mtime":"",
+                "type":"markdown"
+              },
+              "gitbook": {
+                "version":"3.2.3",
+                "time":"2019-07-08T15:24:30.549Z"
+              },
+              "basePath":".",
+              "book": {"language":""}});
+        });
+    </script>
     </div>
-</div>
-
-        
-<script src="../gitbook/app.js"></script>
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-ga/plugin.js"></script>
-    
-
-    
-    <script src="https://cdn.mathjax.org/mathjax/2.0-latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-    
-
-    
-    <script src="../gitbook/plugins/gitbook-plugin-mathjax/plugin.js"></script>
-    
-
-<script>
-require(["gitbook"], function(gitbook) {
-    var config = {"fontSettings":{"theme":null,"family":"sans","size":2},"ga":{"token":"UA-52320657-1"}};
-    gitbook.start(config);
-});
-</script>
-
-        <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,'script','//www.google-analytics.com/analytics.js','ga');ga('create', 'UA-52320657-1', 'auto');ga('send', 'pageview');</script>
-    </body>
-    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+    <script src="gitbook/gitbook-plugin-search/search.js"></script>
+    <script src="gitbook/gitbook-plugin-lunr/lunr.js"></script>
+    <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+    <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+    <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+  </body>
 </html>
