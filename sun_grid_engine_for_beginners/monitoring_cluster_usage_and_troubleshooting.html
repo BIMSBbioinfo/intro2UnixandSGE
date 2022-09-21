@@ -77,9 +77,11 @@
                     <p>To check memory used by a job <code>qstat -f -j &lt;jobid&gt;| grep vmem # -f means qstat in full mode. Gives details</code></p>
                     <h3 id="delete-your-jobs">delete your jobs</h3>
                     <p><code>qdel &lt;jobid&gt;</code> will delete the jobs from the queue.</p>
-                    <p>##Troubleshooting:##</p>
-                    <p>###Why my job doesn’t start:### Usually, this is because the requested memory or CPU resources are not available. Sometimes, nodes are taken out of the cluster for maintanence, which reduces the available resources.</p>
-                    <p>###Why my job has failed:### Here are a couple of steps that might help you understand why your job failed. More often than not, you probably exceed the resources you asked for.</p>
+                    <h2 id="troubleshooting">Troubleshooting:</h2>
+                    <h3 id="why-my-job-doesnt-start">Why my job doesn’t start:</h3>
+                    <p>Usually, this is because the requested memory or CPU resources are not available. Sometimes, nodes are taken out of the cluster for maintanence, which reduces the available resources.</p>
+                    <h3 id="why-my-job-has-failed">Why my job has failed:</h3>
+                    <p>Here are a couple of steps that might help you understand why your job failed. More often than not, you probably exceed the resources you asked for.</p>
                     <ul>
                     <li>Read at the error file (default <jobname>.e<jobid>)</li>
                     <li>Look at the <code>qacct -j &lt;jobid&gt;</code>

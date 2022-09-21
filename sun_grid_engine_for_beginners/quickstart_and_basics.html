@@ -66,7 +66,8 @@
                 <div class="search-noresults">
                   <section class="normal markdown-section">
                     <h1 id="quickstart-and-basics">Quickstart and basics</h1>
-                    <p>##Quickstart## Login to the head node: <code>ssh username@max-login.mdc-berlin.net</code>, you can not do any computation here (see [cluster abuse]). The point of the head node is to distribute and schedule your jobs based on the resources demanded by you. Here is how you can start a job:</p>
+                    <h2 id="quickstart">Quickstart</h2>
+                    <p>Login to the head node: <code>ssh username@max-login.mdc-berlin.net</code>, you can not do any computation here (see [cluster abuse]). The point of the head node is to distribute and schedule your jobs based on the resources demanded by you. Here is how you can start a job:</p>
                     <div class="sourceCode" id="cb1"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>username<span class="ot">@max</span><span class="kw">-</span>loginX:<span class="kw">~</span>$ qsub <span class="kw">-</span>V <span class="kw">-</span>b n <span class="kw">-</span>cwd runJob<span class="at">.sh</span></span>
                     <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dt">Your</span> job <span class="dv">1</span> (<span class="st">&quot;runJob.sh&quot;</span>) has been submitted</span></code></pre></div>
                     <ul>
@@ -77,7 +78,8 @@
                     </ul>
                     <h3 id="what-is-runjobsh">what is runJob.sh</h3>
                     <p><code>runJob.sh</code> is a shell script that has the specific commands to run our program. It basically looks like a bash script on section 1.7 but it can have some additional variables that can be used to configure the resources that the job demands. Command line options explained above (<strong>-V</strong>,<strong>-cwd</strong> etc.) can also be declared in runJob.sh via special syntax. More on qsub in later sections.</p>
-                    <p>##Specifying resources:### The main resources you will be asking for are CPU(slots) and memory.</p>
+                    <h3 id="specifying-resources">Specifying resources:</h3>
+                    <p>The main resources you will be asking for are CPU(slots) and memory.</p>
                     <p>The memory can be requested with <strong>h_vmem</strong>, this is the maximum amount of memory a slot can take, if it exceeds this amount your job will be automatically killed. Another memory related option is <strong>mem_free</strong></p>
                     <p>Here is how you can request those resources:</p>
                     <div class="sourceCode" id="cb2"><pre class="sourceCode powershell"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>username@max<span class="op">-</span>loginX<span class="op">:~</span>$ qsub <span class="op">-</span>l h_vmem<span class="op">=</span>4G myJob<span class="op">.</span><span class="fu">sh</span></span></code></pre></div>
