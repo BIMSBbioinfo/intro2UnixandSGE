@@ -84,7 +84,7 @@
                     <pre><code> #!/bin/bash
                      echo here are the list of files
                      ls -l
-                    
+
                      echo  The number of files:
                      ls -l | wc -l
                     </code></pre>
@@ -96,7 +96,7 @@
                     <p>Now we will create a simple script with one variable. We will assign <code>Hello world</code> string to that variable and print that variable with <code>echo</code>.</p>
                     <pre><code> #!/bin/bash
                      VAR=&quot;Hello world&quot;
-                    
+
                      echo  $VAR
                     </code></pre>
                     <p>When assigning the variable we did not use the <code>$</code> sign, but when using the variable we had to use the <code>$</code> sign.</p>
@@ -107,7 +107,7 @@
                      VAR=$1
                      echo here are the list of files
                      ls -l $VAR
-                    
+
                      echo  The number of files:
                      ls -l $VAR | wc -l
                     </code></pre>
@@ -127,7 +127,7 @@
                     y=2
                     $((10 - 5))
                     $((x-y))
-                    
+
                     echo $((x-y))
                     echo $((10-5))</code></pre>
                     <p>You can also copy paste these commands to the console to see how they work. The <code>echo</code> commands should output <code>4</code> and <code>5</code>.</p>

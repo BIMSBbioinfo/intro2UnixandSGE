@@ -67,8 +67,8 @@
                   <section class="normal markdown-section">
                     <h1 id="quickstart-and-basics">Quickstart and basics</h1>
                     <p>##Quickstart## Login to the head node: <code>ssh username@max-login.mdc-berlin.net</code>, you can not do any computation here (see [cluster abuse]). The point of the head node is to distribute and schedule your jobs based on the resources demanded by you. Here is how you can start a job:</p>
-                    <div class="sourceCode" id="cb1"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span id="cb1-1"><a href="#cb1-1"></a>username<span class="ot">@max</span>-loginX:~$ qsub -V -b n -cwd runJob.sh</span>
-                    <span id="cb1-2"><a href="#cb1-2"></a><span class="dt">Your</span> job <span class="dv">1</span> (<span class="st">&quot;runJob.sh&quot;</span>) has been submitted</span></code></pre></div>
+                    <div class="sourceCode" id="cb1"><pre class="sourceCode ruby"><code class="sourceCode ruby"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>username<span class="ot">@max</span><span class="kw">-</span>loginX:<span class="kw">~</span>$ qsub <span class="kw">-</span>V <span class="kw">-</span>b n <span class="kw">-</span>cwd runJob<span class="at">.sh</span></span>
+                    <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="dt">Your</span> job <span class="dv">1</span> (<span class="st">&quot;runJob.sh&quot;</span>) has been submitted</span></code></pre></div>
                     <ul>
                     <li>The <strong>-V</strong> option to qsub states that the job should have the same environment variables as the shell executing qsub.</li>
                     <li>The <strong>-b</strong> option to qsub states that the command being executed could be a single binary executable or a bash script. In this case the command hostname is a single binary. This option takes a y or n argument indicating either yes the command is a binary or no it is not a binary.</li>
@@ -80,10 +80,10 @@
                     <p>##Specifying resources:### The main resources you will be asking for are CPU(slots) and memory.</p>
                     <p>The memory can be requested with <strong>h_vmem</strong>, this is the maximum amount of memory a slot can take, if it exceeds this amount your job will be automatically killed. Another memory related option is <strong>mem_free</strong></p>
                     <p>Here is how you can request those resources:</p>
-                    <div class="sourceCode" id="cb2"><pre class="sourceCode powershell"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1"></a>username@max-loginX:~$ qsub -l h_vmem=4G myJob.<span class="fu">sh</span></span></code></pre></div>
+                    <div class="sourceCode" id="cb2"><pre class="sourceCode powershell"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>username@max<span class="op">-</span>loginX<span class="op">:~</span>$ qsub <span class="op">-</span>l h_vmem<span class="op">=</span>4G myJob<span class="op">.</span><span class="fu">sh</span></span></code></pre></div>
                     <p>will ask for a machine that has 4GB memory</p>
                     <p>Now, we can also ask for more CPU using <strong>-pe</strong> option. This option stands for “parallel environment” and each cluster sets up a set of parallel environments for parallel processing. The syntax for the option is as follows:<code>-pe [environment name] [number of slots]</code>. The following will start a job with 4 slots using “smp” environment.</p>
-                    <div class="sourceCode" id="cb3"><pre class="sourceCode powershell"><code class="sourceCode powershell"><span id="cb3-1"><a href="#cb3-1"></a>username@max-loginX:~$ qsub -pe smp 4 -l h_vmem=4G myJob.<span class="fu">sh</span></span></code></pre></div>
+                    <div class="sourceCode" id="cb3"><pre class="sourceCode powershell"><code class="sourceCode powershell"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>username@max<span class="op">-</span>loginX<span class="op">:~</span>$ qsub <span class="op">-</span>pe smp 4 <span class="op">-</span>l h_vmem<span class="op">=</span>4G myJob<span class="op">.</span><span class="fu">sh</span></span></code></pre></div>
                   </section>
                 </div>
                 <div class="search-results">
