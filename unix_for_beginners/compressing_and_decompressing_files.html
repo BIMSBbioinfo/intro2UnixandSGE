@@ -67,7 +67,8 @@
                   <section class="normal markdown-section">
                     <h1 id="compressing-and-decompressing-files">Compressing and decompressing files</h1>
                     <p>UNIX systems usually support a number of utilities for backing up and compressing files. Below we will show tar,gzip and zcat utilities</p>
-                    <p>##tar (tape archiver) tar backs up entire directories and files as an archive. An archive is a file that contains other files plus information about them, such as their filename, owner, timestamps, and access permissions. tar does not perform any compression by default.</p>
+                    <h2 id="tar-tape-archiver">tar (tape archiver)</h2>
+                    <p>tar backs up entire directories and files as an archive. An archive is a file that contains other files plus information about them, such as their filename, owner, timestamps, and access permissions. tar does not perform any compression by default.</p>
                     <p>To create a disk file tar archive, use</p>
                     <pre><code>$ tar -cvf archivename filenames</code></pre>
                     <p>where archivename will usually have a .tar extension, so <code>tar -cvf archivename.tar filenames</code>. The <em>c option</em> means create, the <em>v option</em> means verbose (output filenames as they are archived), and <em>option f</em> means file.To list the contents of a tar archive, use</p>

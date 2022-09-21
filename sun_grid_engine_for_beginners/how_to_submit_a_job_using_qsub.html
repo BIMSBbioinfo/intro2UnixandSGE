@@ -101,12 +101,12 @@
                     #$ -cwd
                     #$ -pe smp 6
                     #$ -l h_vmem=6G
-                    
-                    
+
+
                     infile=/data/bioinfo/READS2/R1_001.fastq.gz
                     outfile=/data/bioinfo/READS2/aln/R1_001.sam
                     btindex=/data/bioinfo/genome_data/Caenorhabditis_elegans/UCSC/ce10/Sequence/BowtieIndex/genome
-                    
+
                     gzip -dc $infile | bowtie  --chunkmbs 300 --best -m 1 -p 6 --phred33 -q $btindex   -  -S $outfile
                     </code></pre>
                     <ul>
