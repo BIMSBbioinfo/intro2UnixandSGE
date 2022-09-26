@@ -2,7 +2,7 @@
 
 UNIX systems usually support a number of utilities for backing up and compressing files. Below we will show tar,gzip and zcat utilities
 
-##tar (tape archiver)
+## tar (tape archiver)
 tar backs up entire directories and files as an archive. An archive is a file that contains other files plus information about them, such as  their filename, owner, timestamps, and access permissions. tar does not perform any compression by default.
 
 To create a disk file tar archive, use

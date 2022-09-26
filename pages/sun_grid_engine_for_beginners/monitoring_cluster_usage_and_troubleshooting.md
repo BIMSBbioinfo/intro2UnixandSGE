@@ -23,12 +23,12 @@ To check memory used by a job
 ### delete your jobs ###
 `qdel <jobid>` will delete the jobs from the queue.
 
-##Troubleshooting:##
+## Troubleshooting:
 
-###Why my job doesn't start:###
+### Why my job doesn't start:
 Usually, this is because the requested memory or CPU resources are not available. Sometimes, nodes are taken out of the cluster for maintanence, which reduces the available resources.
 
-###Why my job has failed:###
+### Why my job has failed:
 Here are a couple of steps that might help you understand why your job failed. More often than not, you probably exceed the resources you asked for.
 
  * Read at the error file (default <jobname>.e<jobid>)

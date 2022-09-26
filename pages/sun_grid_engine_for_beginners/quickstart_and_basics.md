@@ -1,7 +1,7 @@
 # Quickstart and basics
 
 
-##Quickstart##
+## Quickstart
 Login to the head node: `ssh username@max-login.mdc-berlin.net`, you can not do any computation here (see [cluster abuse]). The point of the head node is to distribute and schedule your jobs based on the resources demanded by you. Here is how you can start a job:
 
 ```ruby
@@ -17,7 +17,7 @@ The qsub command, if successful, will print the job number to stdout. See [How t
 ### what is runJob.sh
 `runJob.sh` is a shell script that has the specific commands to run our program. It basically looks like a bash script on section 1.7 but it can have some additional variables that can be used to configure the resources that the job demands. Command line options explained above (**-V**,**-cwd** etc.) can also be declared in runJob.sh via special syntax. More on qsub in later sections.
 
-##Specifying resources:###
+### Specifying resources:
 The main resources you will be asking for are CPU(slots) and memory.
 
 The memory can be requested with **h_vmem**, this is the maximum amount of memory a slot can take, if it exceeds this amount your job will be automatically killed. Another memory related option is **mem_free**
