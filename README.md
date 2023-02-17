@@ -34,26 +34,11 @@ to hack on this book.  Then run `npm ci` to install the lunr
 JavaScript library for the search index.
 
 
-### How to update the book
+### How to update the book website
 
-Edit the .md files using markdown syntax and run **bash
-build.sh**. This will regenerate the book and store the files in the
-`book` directory.
+The book and its website are automatically updated on a successful
+push to the `master` branch.
 
-Checkout the **gh-pages** branch.  The contents of this branch are
-served by GitHub pages.  Synchronize the contents of the `book`
-directory with the root directory of that branch, commit the changes
-and push them.
-
-```
-bash build.sh
-... # commit your changes
-git checkout gh-pages
-rsync -azvhr book/ ./
-... # stage the changed files
-git commit -m 'Update book'
-git push origin gh-pages
-```
 
 ### Acknowledgements
 
